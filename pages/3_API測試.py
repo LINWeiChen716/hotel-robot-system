@@ -315,8 +315,8 @@ def _load_common_values():
         robots = repo.list_robots(store_id) if store_id else []
         map_tabs = repo.list_map_tabs(store_id) if store_id else []
         groups = repo.list_groups(store_id) if store_id else []
-    except Exception:
-        return "", [], [], []
+    except Exception as exc:
+        return "", [], [], [], f"讀取展間資料失敗：{exc}"
 
     sns = []
     for r in robots:
@@ -345,7 +345,16 @@ def _load_common_values():
                 }
             )
 
-    return shop_id, sns, maps, group_rows
+    if not shop_id and not sns and not maps and not group_rows:
+        return (
+            shop_id,
+            sns,
+            maps,
+            group_rows,
+            "目前沒有可用的快速帶入資料。請先到「設定」頁建立商店、機器人、地圖分頁或群組。",
+        )
+
+    return shop_id, sns, maps, group_rows, ""
 
 
 def _build_callback_url() -> tuple[str, bool]:
@@ -894,8 +903,10 @@ with col_q:
         else:
             default_query_obj = _parse_example_query(examples.get("query"))
 
-    quick_shop_id, quick_sns, quick_maps, quick_groups = _load_common_values()
+    quick_shop_id, quick_sns, quick_maps, quick_groups, quick_error = _load_common_values()
     with st.expander("⚡ 快速帶入：門店ID / 機器SN / 地圖名稱", expanded=False):
+        if quick_error:
+            st.warning(quick_error)
         st.markdown(f"門店ID：**{quick_shop_id or '未設定'}**")
         if quick_sns:
             st.markdown("機器人 SN（全部）")
@@ -969,7 +980,7 @@ with col_b:
 
     # 與 Query 相同，若有快速帶入值，Body 也同步覆蓋常用欄位。
     if api_config:
-        quick_shop_id, quick_sns, quick_maps, _quick_groups = _load_common_values()
+        quick_shop_id, quick_sns, quick_maps, _quick_groups, _quick_error = _load_common_values()
         chosen_sn = st.session_state.get("quick_sn_select", "")
         chosen_map = st.session_state.get("quick_map_select", "")
         use_shop = st.session_state.get("quick_use_shop", True)
