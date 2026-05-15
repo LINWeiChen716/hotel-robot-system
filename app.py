@@ -7,9 +7,12 @@ Pudu Python 控制檯 — 登入頁
   pages/3_API.py ← API 測試
 """
 
-import streamlit as st
+import os
 
-from services.config import get_setting
+import streamlit as st
+from dotenv import load_dotenv
+
+load_dotenv()
 
 st.set_page_config(page_title="Pudu 控制檯", page_icon="🤖", layout="wide")
 
@@ -19,7 +22,7 @@ if "authenticated" not in st.session_state:
 
 
 def _check_pin(pin: str) -> bool:
-    expected = get_setting("SHOWROOM_ACCESS_PIN", "")
+    expected = os.getenv("SHOWROOM_ACCESS_PIN", "")
     if not expected:          # 未設定 PIN 則直接放行
         return True
     return pin == expected
