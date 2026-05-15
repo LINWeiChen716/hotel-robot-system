@@ -1,20 +1,18 @@
 """Supabase 連線（robot schema）"""
 
-import os
 from functools import lru_cache
 
-from dotenv import load_dotenv
 from supabase import Client, create_client
 
-load_dotenv()
+from services.config import get_setting
 
 
 @lru_cache(maxsize=1)
 def get_db() -> Client:
-    url = os.getenv("SUPABASE_URL", "")
-    key = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
+    url = get_setting("SUPABASE_URL", "")
+    key = get_setting("SUPABASE_SERVICE_ROLE_KEY", "")
     if not url or not key:
-        raise RuntimeError("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in environment variables")
+        raise RuntimeError("Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in Streamlit secrets or environment variables")
     return create_client(url, key)
 
 
