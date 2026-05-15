@@ -1,0 +1,6550 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="普渡雲開放平臺 API 技術文件">
+      
+      
+      
+      
+        <link rel="prev" href="../%E9%99%84%E9%8C%84A_PYTHON_API_%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E%E6%9B%B8.md_%E5%AE%8C%E6%95%B4%E4%BD%B5%E5%85%A5/">
+      
+      
+        <link rel="next" href="../%E9%99%84%E9%8C%84B_PYTHON_API_API_%E7%89%B9%E6%AE%8A%E9%9C%80%E6%B1%82%E8%AA%AA%E6%98%8E.md_%E5%AE%8C%E6%95%B4%E4%BD%B5%E5%85%A5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Pudu 控制檯使用說明書（給不懂程式碼的使用者） - Pudu Cloud API 說明書</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pudu" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Pudu Cloud API 說明書" class="md-header__button md-logo" aria-label="Pudu Cloud API 說明書" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pudu Cloud API 說明書
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pudu 控制檯使用說明書（給不懂程式碼的使用者）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="切換至深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切換至深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="切換至淺色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切換至淺色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guide/%E6%A6%82%E8%BF%B0/" class="md-tabs__link">
+          
+  
+  
+  開發指南
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../callback/%E6%A9%9F%E5%99%A8%E7%95%B0%E5%B8%B8%E6%95%85%E9%9A%9C%E5%9B%9E%E5%91%BC_10%E5%88%86%E9%90%98%E5%BB%B6%E9%81%B2_-robotErrorWarning/" class="md-tabs__link">
+          
+  
+  
+  回調通知
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../common/%E5%8F%96%E5%BE%97%E6%A9%9F%E5%99%A8%E7%95%B6%E5%89%8D%E4%BD%BF%E7%94%A8%E5%9C%B0%E5%9C%96%E5%91%BC%E5%8F%AB%E7%AF%84%E4%BE%8B/" class="md-tabs__link">
+          
+  
+  
+  通用接口
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tasks/%E7%99%BC%E8%B5%B7%E5%91%BC%E5%8F%AB%E4%BB%BB%E5%8B%99/" class="md-tabs__link">
+          
+  
+  
+  機器人任務
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../appendix/%E6%A9%9F%E5%99%A8%E9%A1%9E%E5%9E%8B/" class="md-tabs__link">
+          
+  
+  
+  附錄
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E9%A6%96%E9%A0%81/" class="md-tabs__link">
+          
+  
+  
+  其他
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pudu Cloud API 說明書" class="md-nav__button md-logo" aria-label="Pudu Cloud API 說明書" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pudu Cloud API 說明書
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    開發指南
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    開發指南
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/%E6%A6%82%E8%BF%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/%E5%BF%AB%E9%80%9F%E9%96%8B%E5%A7%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    快速開始
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/%E7%B0%BD%E5%90%8D%E7%94%9F%E6%88%90%E5%92%8C%E8%AA%8D%E8%AD%89%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    簽名生成和認證流程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回調通知
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    回調通知
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E7%95%B0%E5%B8%B8%E6%95%85%E9%9A%9C%E5%9B%9E%E5%91%BC_10%E5%88%86%E9%90%98%E5%BB%B6%E9%81%B2_-robotErrorWarning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器異常故障回呼(10分鐘延遲)-robotErrorWarning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E7%95%B0%E5%B8%B8%E5%AF%A6%E6%99%82%E9%80%9A%E7%9F%A5-robotErrorNotice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    異常實時通知-robotErrorNotice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E7%B6%81%E5%AE%9A%E9%96%80%E5%B8%82%E9%80%9A%E7%9F%A5-robotBinding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器綁定門市通知-robotBinding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E8%A7%A3%E7%B6%81%E9%96%80%E5%B8%82%E9%80%9A%E7%9F%A5-robotUnBinding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器解綁門市通知-robotUnBinding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E6%BF%80%E6%B4%BB%E9%80%9A%E7%9F%A5-robotActivate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器激活通知-robotActivate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E5%9C%A8%E7%B7%9A_%E9%9B%A2%E7%B7%9A%E7%8B%80%E6%85%8B%E8%AE%8A%E6%9B%B4%E9%80%9A%E7%9F%A5-robotStatus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器在線_離線狀態變更通知-robotStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%80%A5%E5%81%9C%E6%81%A2%E5%BE%A9%E9%80%9A%E7%9F%A5-robotEmergencyRecover/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    急停恢復通知-robotEmergencyRecover
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E5%B7%A5%E4%BD%9C%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyRobotStatus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器工作狀態通知-notifyRobotStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E5%9C%B0%E5%9C%96%E8%B3%87%E8%A8%8A_%E5%85%83%E7%B4%A0%E9%BB%9E_%E4%B8%8A%E5%82%B3_%E8%AE%8A%E6%9B%B4_%E5%88%AA%E9%99%A4-mapElementChange/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    地圖資訊(元素點)上傳_變更_刪除-mapElementChange
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E4%BD%8D%E7%BD%AE%E4%B8%8A%E5%A0%B1-notifyRobotPose/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器位置上報-notifyRobotPose
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E7%A7%BB%E5%8B%95%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyRobotMoveState/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器移動狀態通知-notifyRobotMoveState
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E5%88%87%E6%8F%9B%E5%9C%B0%E5%9C%96%E7%9A%84%E4%BB%BB%E5%8B%99%E9%80%9A%E7%9F%A5-notifySwitchMap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    切換地圖的任務通知-notifySwitchMap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E5%91%BC%E5%8F%AB%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyCustomCall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    呼叫狀態通知-notifyCustomCall
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E8%A8%82%E5%96%AE%E9%80%9A%E7%9F%A5-notifyRobotOrderState/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    訂單通知-notifyRobotOrderState
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E4%BA%BA%E9%BB%9E%E4%BD%8D%E9%85%8D%E9%80%81%E9%80%9A%E7%9F%A5-robotDeliveryStatus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器人點位配送通知-robotDeliveryStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E5%B7%A5%E6%A5%AD%E5%A0%B4%E6%99%AF%E9%81%8B%E9%80%81%E9%80%9A%E7%9F%A5-notifyTransportTask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    工業場景運送通知-notifyTransportTask
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E9%85%8D%E9%80%81%E4%BB%BB%E5%8B%99%E9%80%9A%E7%9F%A5-notifyDeliveryTask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配送任務通知-notifyDeliveryTask
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E8%B7%91%E8%85%BF%E4%BB%BB%E5%8B%99%E9%80%9A%E7%9F%A5-notifyErrandStatus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    跑腿任務通知-notifyErrandStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E9%A0%82%E5%8D%87%E4%BB%BB%E5%8B%99%E9%80%9A%E7%9F%A5-notifyLiftingTask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頂升任務通知-notifyLiftingTask
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%B8%85%E6%BD%94%E6%A9%9F%E5%99%A8%E5%AE%9A%E6%99%82%E4%BB%BB%E5%8B%99%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-TASK_STATUS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔機器定時任務狀態通知-TASK_STATUS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%B8%85%E6%BD%94%E4%BB%BB%E5%8B%99%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyCleanStatus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔任務狀態通知-notifyCleanStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E5%B7%A1%E8%88%AA%E4%BB%BB%E5%8B%99%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyCruiseTask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    巡航任務狀態通知-notifyCruiseTask
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E9%9B%BB%E9%87%8F%E9%80%9A%E7%9F%A5-notifyRobotPower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器電量通知-notifyRobotPower
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E8%89%99%E9%96%80%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyDoorsState/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    艙門狀態通知-notifyDoorsState
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E6%A9%9F%E5%99%A8%E6%A2%AF%E6%8E%A7%E9%80%9A%E7%9F%A5-notifyElevatorUtilizeState/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器梯控通知-notifyElevatorUtilizeState
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E4%BA%8C%E7%B6%AD%E7%A2%BC%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5-notifyQrCodeContent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    二維碼消息通知-notifyQrCodeContent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E9%A0%82%E5%8D%87%E6%A9%9F%E6%A7%8B%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyLiftingStatus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頂升機構狀態通知-notifyLiftingStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../callback/%E5%9B%9E%E5%85%85%E7%8B%80%E6%85%8B%E9%80%9A%E7%9F%A5-notifyRechargeStatus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回充狀態通知-notifyRechargeStatus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    通用接口
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    通用接口
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/%E5%8F%96%E5%BE%97%E6%A9%9F%E5%99%A8%E7%95%B6%E5%89%8D%E4%BD%BF%E7%94%A8%E5%9C%B0%E5%9C%96%E5%91%BC%E5%8F%AB%E7%AF%84%E4%BE%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得機器當前使用地圖呼叫範例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/%E6%A9%9F%E5%99%A8%E5%8F%AF%E7%94%A8%E5%9C%B0%E5%9C%96%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器可用地圖列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/%E6%A9%9F%E5%99%A8%E7%95%B6%E5%89%8D%E4%BD%BF%E7%94%A8%E5%9C%B0%E5%9C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器當前使用地圖
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/%E7%B9%AA%E8%A3%BD%E8%A7%A3%E6%9E%90%E5%BE%8C%E7%9A%84%E5%9C%B0%E5%9C%96V2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    繪製解析後的地圖V2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../common/%E5%8F%96%E5%BE%97%E6%A9%9F%E5%99%A8%E7%95%B6%E5%89%8D%E4%BD%BF%E7%94%A8%E5%9C%B0%E5%9C%96%E7%9A%84%E9%BB%9E%E4%BD%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得機器當前使用地圖的點位
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器人任務
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    機器人任務
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E7%99%BC%E8%B5%B7%E5%91%BC%E5%8F%AB%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    發起呼叫任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E5%8F%96%E6%B6%88%E5%91%BC%E5%8F%AB%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取消呼叫任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E5%AE%8C%E6%88%90%E5%91%BC%E5%8F%AB%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    完成呼叫任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E7%99%BC%E9%80%81%E8%87%AA%E5%AE%9A%E7%BE%A9%E5%B1%95%E7%A4%BA%E5%85%A7%E5%AE%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    發送自定義展示內容
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E9%85%8D%E9%80%81%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配送任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E9%85%8D%E9%80%81%E6%8C%87%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配送指令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E9%81%8B%E9%80%81%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    運送任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E9%81%8B%E9%80%81%E6%8C%87%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    運送指令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E8%B7%91%E8%85%BF%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    跑腿任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E8%B7%91%E8%85%BF%E4%BB%BB%E5%8B%99%E6%8E%A7%E5%88%B6%E6%8C%87%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    跑腿任務控制指令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E9%A0%82%E5%8D%87%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頂升任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E9%A0%82%E5%8D%87%E4%BB%BB%E5%8B%99%E6%8E%A7%E5%88%B6%E6%8C%87%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頂升任務控制指令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E6%B8%85%E6%BD%94%E4%BB%BB%E5%8B%99%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔任務列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E6%B8%85%E6%BD%94%E6%8C%87%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔指令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E5%AE%9A%E6%99%82%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    定時任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tasks/%E7%B5%A6%E6%A9%9F%E5%99%A8%E7%99%BC%E9%80%81%E8%A8%97%E7%9B%A4%E6%8E%A8%E9%80%81%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    給機器發送託盤推送任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附錄
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    附錄
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/%E6%A9%9F%E5%99%A8%E9%A1%9E%E5%9E%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器類型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/%E9%8C%AF%E8%AA%A4%E7%A2%BC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    錯誤碼
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../appendix/Locale%E6%9E%9A%E8%88%89/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Locale枚舉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    其他
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    其他
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A6%96%E9%A0%81/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首頁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%94%A8%E6%88%B6%E8%AB%8B%E6%B1%82%E6%99%AE%E6%B8%A1%E9%96%8B%E6%94%BE%E5%B9%B3%E5%8F%B0%E4%BB%8B%E9%9D%A2%E6%AD%A5%E9%A9%9F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用戶請求普渡開放平台介面步驟
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%91%91%E6%AC%8A%E4%B8%B2%E6%8E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    鑑權串接
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%99%AE%E6%B8%A1%E9%96%8B%E6%94%BE%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%B0%8D%E5%A4%96%E5%9B%BA%E5%AE%9A%E5%9F%9F%E5%90%8D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    普渡開放平台的對外固定域名
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%99%AE%E6%B8%A1%E9%96%8B%E6%94%BE%E5%B9%B3%E5%8F%B0%E9%91%91%E6%AC%8A-%E6%87%89%E7%94%A8%E8%AA%8D%E8%AD%89%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    普渡開放平台鑑權-應用認證方式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%91%BC%E5%8F%AB%E6%A9%9F%E5%99%A8%E5%91%BC%E5%8F%AB%E7%AF%84%E4%BE%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    呼叫機器呼叫範例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8D%E9%BB%9E%E9%9C%80%E6%9B%BF%E6%8F%9B%E7%82%BA%E7%9C%9F%E5%AF%A6%E5%8F%83%E6%95%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    重點需替換為真實參數
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%91%BC%E5%8F%AB%E6%8A%B5%E9%81%94%E9%80%9A%E7%9F%A5%E5%9B%9E%E5%91%BC%E7%A4%BA%E4%BE%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    呼叫抵達通知回呼示例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%87%8D%E9%BB%9E%E9%9C%80%E6%9B%BF%E6%8F%9B%E7%82%BA%E7%9C%9F%E5%AF%A6%E5%8F%83%E6%95%B8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    重點需替換為真實參數
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%B3%87%E6%96%99%E4%B8%AD%E5%BF%83%E6%8C%87%E6%A8%99%E5%AE%9A%E7%BE%A9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    資料中心指標定義
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E9%96%80%E5%B8%82%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得門市列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%96%80%E5%B8%82%E6%A9%9F%E5%99%A8%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    門市機器列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%96%80%E5%B8%82%E4%B8%8B%E5%9C%B0%E5%9C%96%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    門市下地圖列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E5%9C%B0%E5%9C%96%E8%A9%B3%E6%83%85V2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得地圖詳情V2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E6%A9%9F%E5%99%A8%E5%AF%A6%E6%99%82%E5%9C%B0%E5%9C%96%E4%BD%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得機器實時地圖位置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E9%BB%9E%E4%BD%8D%E5%88%86%E7%B5%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得點位分組
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E6%B8%85%E6%BD%94%E6%A9%9F%E5%99%A8%E7%8B%80%E6%85%8B%E8%A9%B3%E6%83%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得清潔機器狀態詳情
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E6%8C%87%E5%AE%9A%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%8B%80%E6%85%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得指定機器人狀態
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E6%8C%87%E5%AE%9A%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%8B%80%E6%85%8BV2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得指定機器人狀態V2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E7%B5%84%E4%B8%AD%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%8B%80%E6%85%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得組中機器人狀態
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E7%B5%84%E4%B8%AD%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%8B%80%E6%85%8BV2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得組中機器人狀態V2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E7%95%B6%E5%89%8D%E6%A9%9F%E5%99%A8%E5%9F%B7%E8%A1%8C%E4%BB%BB%E5%8B%99%E7%8B%80%E6%85%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得當前機器執行任務狀態
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E7%B6%81%E5%AE%9A%E7%9A%84%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%B5%84/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得綁定的機器人組
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E6%A9%9F%E5%99%A8%E4%BA%BA%E7%B5%84%E4%B8%AD%E7%9A%84%E6%A9%9F%E5%99%A8%E4%BA%BA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得機器人組中的機器人
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E5%91%BC%E5%8F%AB%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得呼叫列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E5%BB%A3%E5%91%8A%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得廣告列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E5%BB%A3%E5%91%8A%E8%A9%B3%E6%83%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得廣告詳情
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%96%B0%E5%A2%9E%E5%BB%A3%E5%91%8A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    新增廣告
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9B%B4%E6%96%B0%E5%BB%A3%E5%91%8A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    更新廣告
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%88%AA%E9%99%A4%E5%BB%A3%E5%91%8A/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    刪除廣告
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E5%BB%A3%E5%91%8A%E5%A0%B4%E6%99%AF/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得廣告場景
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E5%B7%A1%E8%88%AA%E8%B7%AF%E5%BE%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得巡航路徑
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%99%BC%E8%B5%B7%E5%B7%A1%E8%88%AA%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    發起巡航任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E7%99%BC%E9%80%81%E5%B7%A1%E8%88%AA%E6%8C%87%E4%BB%A4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    發送巡航指令
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A9%9F%E5%99%A8%E4%BA%BA%E4%B8%80%E9%8D%B5%E5%9B%9E%E5%85%85V2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器人一鍵回充V2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E8%89%99%E9%96%80%E7%8B%80%E6%85%8B/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得艙門狀態
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%89%99%E9%96%80%E6%8E%A7%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    艙門控制
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E8%89%99%E9%96%80%E6%8B%8D%E7%85%A7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得艙門拍照
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E8%A8%AD%E7%BD%AE%E9%A0%81%E9%9D%A2%E9%A1%AF%E7%A4%BA%E5%85%A7%E5%AE%B9/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    設置頁面顯示內容
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E6%B6%88%E4%BB%BB%E5%8B%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取消任務
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9B%BB%E6%A2%AF%E5%85%A7%E5%88%87%E6%8F%9B%E7%95%B6%E5%89%8D%E4%BD%BF%E7%94%A8%E7%9A%84%E6%A8%93%E5%B1%A4%E5%9C%B0%E5%9C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    電梯內切換當前使用的樓層地圖
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%80%9A%E7%9F%A5%E6%A9%9F%E5%99%A8%E4%B8%8A%E5%A0%B1%E4%BD%8D%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    通知機器上報位置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%88%87%E6%8F%9B%E5%9C%B0%E5%9C%96/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    切換地圖
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%96%E5%BE%97%E9%9F%B3%E9%A0%BB%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    取得音頻列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%92%AD%E6%94%BE%E9%9F%B3%E9%A0%BB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    播放音頻
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%92%AD%E6%94%BE%E6%8E%A7%E5%88%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    播放控制
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%9F%B3%E9%87%8F%E8%A8%AD%E7%BD%AE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    音量設置
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A9%9F%E5%99%A8%E6%A6%82%E8%A6%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器概覽
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A9%9F%E5%99%A8%E9%81%8B%E8%A1%8C%E6%A6%82%E8%A6%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器運行概覽
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%96%80%E5%B8%82%E6%A6%82%E8%A6%BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    門市概覽
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A9%9F%E5%99%A8%E9%81%8B%E8%A1%8C%E5%88%86%E6%9E%90-%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器運行分析-折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%96%80%E5%B8%82%E5%88%86%E6%9E%90-%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    門市分析-折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%A9%9F%E5%99%A8%E9%81%8B%E8%A1%8C%E5%88%86%E6%9E%90-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    機器運行分析-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%96%80%E5%B8%82%E5%88%86%E6%9E%90-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    門市分析-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BB%A3%E5%91%8A-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    廣告-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%91%BC%E5%8F%AB-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    呼叫-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B7%A1%E8%88%AA-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    巡航-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%85%8D%E9%80%81-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配送-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A0%98%E4%BD%8D-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    領位-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AE%AE%E6%A0%BC-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    宮格-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%92%E5%8B%95-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    互動-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%9E%E7%9B%A4-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回盤-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%94%AC%E5%AE%A2-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    攬客-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A0%82%E5%8D%87-%E7%B8%BD%E6%95%B8_%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頂升-總數|折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B8%85%E6%BD%94_%E6%B4%97%E5%9C%B0_%E6%8E%83%E5%9C%B0_-%E6%8A%98%E7%B7%9A_%E6%9F%B1%E7%8B%80%E5%9C%96%E8%B3%87%E6%96%99/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔(洗地|掃地)-折線|柱狀圖資料
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B8%85%E6%BD%94_%E6%B4%97%E5%9C%B0_%E6%8E%83%E5%9C%B0_-24%E5%B0%8F%E6%99%82%E9%81%8B%E8%A1%8C%E5%88%86%E4%BD%88/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔(洗地|掃地)-24小時運行分佈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%BB%A3%E5%91%8A-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    廣告-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%91%BC%E5%8F%AB-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    呼叫-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%B7%A1%E8%88%AA-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    巡航-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%85%8D%E9%80%81-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配送-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A0%98%E4%BD%8D-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    領位-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%AE%AE%E6%A0%BC-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    宮格-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BA%92%E5%8B%95-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    互動-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%9E%E7%9B%A4-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回盤-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%94%AC%E5%AE%A2-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    攬客-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A0%82%E5%8D%87-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頂升-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B8%85%E6%BD%94_%E6%B4%97%E5%9C%B0_%E6%8E%83%E5%9C%B0_-%E5%88%97%E8%A1%A8%E5%88%86%E9%A0%81%E6%9F%A5%E8%A9%A2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔(洗地|掃地)-列表分頁查詢
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%91%BC%E5%8F%AB-%E7%9B%AE%E7%9A%84%E5%9C%B0%E5%9F%B7%E8%A1%8C%E6%98%8E%E7%B4%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    呼叫-目的地執行明細
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%85%8D%E9%80%81-%E7%9B%AE%E7%9A%84%E5%9C%B0%E5%9F%B7%E8%A1%8C%E6%98%8E%E7%B4%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    配送-目的地執行明細
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A0%98%E4%BD%8D-%E7%9B%AE%E7%9A%84%E5%9C%B0%E5%9F%B7%E8%A1%8C%E6%98%8E%E7%B4%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    領位-目的地執行明細
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%A0%82%E5%8D%87-%E7%9B%AE%E7%9A%84%E5%9C%B0%E5%9F%B7%E8%A1%8C%E6%98%8E%E7%B4%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    頂升-目的地執行明細
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%9B%9E%E7%9B%A4-%E7%9B%AE%E7%9A%84%E5%9C%B0%E5%9F%B7%E8%A1%8C%E6%98%8E%E7%B4%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    回盤-目的地執行明細
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B8%85%E6%BD%94%E5%A0%B1%E5%91%8A-%E5%88%97%E8%A1%A8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔報告-列表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%B8%85%E6%BD%94%E5%A0%B1%E5%91%8A-%E8%A9%B3%E6%83%85/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    清潔報告-詳情
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%96%8B%E6%A9%9F%E8%87%AA%E6%AA%A2-%E6%9F%A5%E8%A9%A2List/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    開機自檢-查詢List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%85%85%E9%9B%BB%E8%A8%98%E9%8C%84-%E6%9F%A5%E8%A9%A2List/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    充電記錄-查詢List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%95%85%E9%9A%9C_%E4%BA%8B%E4%BB%B6-%E6%9F%A5%E8%A9%A2List/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    故障|事件-查詢List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E9%8C%84A_PYTHON_API_%E4%BD%BF%E7%94%A8%E8%AA%AA%E6%98%8E%E6%9B%B8.md_%E5%AE%8C%E6%95%B4%E4%BD%B5%E5%85%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附錄A：PYTHON API/使用說明書.md（完整併入）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pudu 控制檯使用說明書（給不懂程式碼的使用者）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pudu 控制檯使用說明書（給不懂程式碼的使用者）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 這個系統在做什麼
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 進入系統
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 進入系統">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-windows-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 第一次使用：先安裝（Windows PowerShell）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-windows-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 啟動網頁服務（Windows PowerShell）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 開啟網址
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 如果打不開網頁，請照這組排查指令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 首頁（app 首頁）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 設定頁（最重要的後臺）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 設定頁（最重要的後臺）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 商店
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 機器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 群組
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 動作範本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 按鈕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 地圖分頁
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 操作頁（現場執行頁）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 操作頁（現場執行頁）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 按鈕執行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 機器人狀態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 地圖資訊
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 事件紀錄
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. API 測試頁（開發與驗證入口）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. API 測試頁（開發與驗證入口）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 你會看到的區塊
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-get-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 GET 與 POST 的填寫原則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 推薦做法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 常用特殊規則速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 常用特殊規則速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-v1-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. 取得組狀態 V1 / V2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-v1-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. 取得機器狀態 V1 / V2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-start_time-end_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. start_time / end_time 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-map_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. map_name 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-group_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E. 群組名稱與 group_id 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F. 取得語音列表規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G. 地圖相關 API 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 你的標準操作流程（API 測試 → 範本 → 按鈕）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 你的標準操作流程（API 測試 → 範本 → 按鈕）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-api-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 A：在 API 測試找出可用 API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 B：複製成功請求內容
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 C：到設定頁新增動作範本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 D：到設定頁按鈕綁定範本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 E：到操作頁執行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-get-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 範例：一個 GET 和一個 POST
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 範例：一個 GET 和一個 POST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 GET 範例（查狀態）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 POST 範例（切換地圖）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 常見錯誤與排除
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 常見錯誤與排除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 API 回應失敗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 JSON 解析失敗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 按鈕按了沒效果
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 地圖載不出來
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 新人上手最短路徑（5 分鐘）
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%99%84%E9%8C%84B_PYTHON_API_API_%E7%89%B9%E6%AE%8A%E9%9C%80%E6%B1%82%E8%AA%AA%E6%98%8E.md_%E5%AE%8C%E6%95%B4%E4%BD%B5%E5%85%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附錄B：PYTHON API/API_特殊需求說明.md（完整併入）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API_%E7%89%B9%E6%AE%8A%E9%9C%80%E6%B1%82%E8%AA%AA%E6%98%8E_%E7%B6%B2%E7%AB%99%E5%85%A7%E8%88%87%E5%AE%98%E6%96%B9%E7%9B%B4%E6%89%93%E5%B7%AE%E7%95%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API 特殊需求說明（網站內與官方直打差異）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 這個系統在做什麼
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 進入系統
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 進入系統">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-windows-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 第一次使用：先安裝（Windows PowerShell）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-windows-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 啟動網頁服務（Windows PowerShell）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 開啟網址
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 如果打不開網頁，請照這組排查指令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 首頁（app 首頁）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 設定頁（最重要的後臺）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 設定頁（最重要的後臺）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 商店
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 機器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 群組
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 動作範本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 按鈕
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 地圖分頁
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 操作頁（現場執行頁）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 操作頁（現場執行頁）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 按鈕執行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 機器人狀態
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 地圖資訊
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 事件紀錄
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. API 測試頁（開發與驗證入口）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. API 測試頁（開發與驗證入口）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 你會看到的區塊
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-get-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 GET 與 POST 的填寫原則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 推薦做法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 常用特殊規則速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.4 常用特殊規則速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-v1-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. 取得組狀態 V1 / V2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-v1-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. 取得機器狀態 V1 / V2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-start_time-end_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C. start_time / end_time 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-map_name" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D. map_name 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-group_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E. 群組名稱與 group_id 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F. 取得語音列表規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G. 地圖相關 API 規則
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 你的標準操作流程（API 測試 → 範本 → 按鈕）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 你的標準操作流程（API 測試 → 範本 → 按鈕）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-api-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 A：在 API 測試找出可用 API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 B：複製成功請求內容
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 C：到設定頁新增動作範本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 D：到設定頁按鈕綁定範本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        步驟 E：到操作頁執行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-get-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 範例：一個 GET 和一個 POST
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 範例：一個 GET 和一個 POST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 GET 範例（查狀態）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 POST 範例（切換地圖）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 常見錯誤與排除
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 常見錯誤與排除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 API 回應失敗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 JSON 解析失敗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 按鈕按了沒效果
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 地圖載不出來
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 新人上手最短路徑（5 分鐘）
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="pudu">Pudu 控制檯使用說明書（給不懂程式碼的使用者）<a class="headerlink" href="#pudu" title="Permanent link">&para;</a></h1>
+<p>本文件是給「不需要看程式」也能上手的人。
+只要照步驟做，就可以完成：</p>
+<ol>
+<li>在 API 測試頁找到可用 API</li>
+<li>填參數送出請求</li>
+<li>把成功請求內容做成動作範本</li>
+<li>把動作範本組成按鈕</li>
+<li>在操作頁一鍵執行</li>
+</ol>
+<hr />
+<h2 id="1">1. 這個系統在做什麼<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>這個網頁是 Pudu 機器人控制檯，主要分成三個工作區：</p>
+<ul>
+<li>設定：管理門市、機器人、動作範本、按鈕、地圖分頁</li>
+<li>操作：看到機器人狀態、地圖位置，並執行按鈕</li>
+<li>API 測試：測試 API，確認參數正確，再轉成範本</li>
+</ul>
+<p>你可以把它想成三步：</p>
+<ul>
+<li>先在 API 測試頁驗證「API 怎麼打才會成功」</li>
+<li>再去設定頁把成功內容存成「動作範本」</li>
+<li>最後在設定頁建立「按鈕」並綁定範本，回操作頁按按鈕執行</li>
+</ul>
+<hr />
+<h2 id="2">2. 進入系統<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21-windows-powershell">2.1 第一次使用：先安裝（Windows PowerShell）<a class="headerlink" href="#21-windows-powershell" title="Permanent link">&para;</a></h3>
+<p>請在 PowerShell 依序貼上執行：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nb">Set-Location</span> <span class="s2">&quot;d:\SynologyDrive\桌面\PYTHON API&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">python</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="p">-</span><span class="n">-upgrade</span> <span class="n">pip</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">python</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div></td></tr></table></div>
+<p>若看到 PowerShell 阻擋啟用虛擬環境，先執行一次：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">Set-ExecutionPolicy</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span> <span class="n">RemoteSigned</span>
+</code></pre></div></td></tr></table></div>
+<p>然後關掉 PowerShell 重開，再執行上面 4 行安裝指令。</p>
+<h3 id="22-windows-powershell">2.2 啟動網頁服務（Windows PowerShell）<a class="headerlink" href="#22-windows-powershell" title="Permanent link">&para;</a></h3>
+<p>啟動方法 A（建議）：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">Set-Location</span> <span class="s2">&quot;d:\SynologyDrive\桌面\PYTHON API&quot;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">python</span> <span class="n">-m</span> <span class="n">streamlit</span> <span class="n">run</span> <span class="n">app</span><span class="p">.</span><span class="n">py</span> <span class="p">-</span><span class="n">-server</span><span class="p">.</span><span class="n">port</span> <span class="n">8501</span> <span class="p">-</span><span class="n">-server</span><span class="p">.</span><span class="n">address</span> <span class="n">127</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span>
+</code></pre></div></td></tr></table></div>
+<p>啟動方法 B（不啟用環境，直接指定 python）：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nb">Set-Location</span> <span class="s2">&quot;d:\SynologyDrive\桌面\PYTHON API&quot;</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="p">&amp;</span> <span class="s2">&quot;.\.venv\Scripts\python.exe&quot;</span> <span class="n">-m</span> <span class="n">streamlit</span> <span class="n">run</span> <span class="n">app</span><span class="p">.</span><span class="n">py</span> <span class="p">-</span><span class="n">-server</span><span class="p">.</span><span class="n">port</span> <span class="n">8501</span> <span class="p">-</span><span class="n">-server</span><span class="p">.</span><span class="n">address</span> <span class="n">127</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span>
+</code></pre></div></td></tr></table></div>
+<p>看到 <code>You can now view your Streamlit app in your browser.</code> 代表啟動成功。
+這個終端機視窗要保持開著，關掉就會停止服務。</p>
+<h3 id="23">2.3 開啟網址<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<ol>
+<li>啟動後進入 <code>http://localhost:8501/</code></li>
+<li>看到「展間系統登入」畫面</li>
+<li>輸入 PIN（若管理員有設定 <code>SHOWROOM_ACCESS_PIN</code>）</li>
+<li>登入後從左側側欄切換頁面</li>
+</ol>
+<h3 id="24">2.4 如果打不開網頁，請照這組排查指令<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<p>先檢查 8501 埠是否真的有服務在跑：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nb">Get-NetTCPConnection</span> <span class="n">-LocalPort</span> <span class="n">8501</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span>
+</code></pre></div></td></tr></table></div>
+<p>若查不到任何資料，代表服務沒起來，請回到「2.2 啟動網頁服務」重新跑。</p>
+<p>若有資料但網頁還是打不開：</p>
+<ol>
+<li>改開 <code>http://127.0.0.1:8501/</code></li>
+<li>確認你是同一臺電腦開啟瀏覽器</li>
+<li>檢查終端機是否已出現紅色錯誤訊息</li>
+</ol>
+<p>若出現 <code>ModuleNotFoundError</code> 類錯誤，回「2.1 第一次使用：先安裝」重跑安裝指令。</p>
+<p>若 8501 被其他程式佔用，改用 8502 啟動：</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nb">Set-Location</span> <span class="s2">&quot;d:\SynologyDrive\桌面\PYTHON API&quot;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="n">python</span> <span class="n">-m</span> <span class="n">streamlit</span> <span class="n">run</span> <span class="n">app</span><span class="p">.</span><span class="n">py</span> <span class="p">-</span><span class="n">-server</span><span class="p">.</span><span class="n">port</span> <span class="n">8502</span> <span class="p">-</span><span class="n">-server</span><span class="p">.</span><span class="n">address</span> <span class="n">127</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span>
+</code></pre></div></td></tr></table></div>
+<p>然後開 <code>http://127.0.0.1:8502/</code>。</p>
+<h3 id="25-app">2.5 首頁（app 首頁）<a class="headerlink" href="#25-app" title="Permanent link">&para;</a></h3>
+<p>首頁只做兩件事：</p>
+<ul>
+<li>告訴你左側有「設定 / 操作 / API」三頁</li>
+<li>提供「登出」按鈕</li>
+</ul>
+<hr />
+<h2 id="3">3. 設定頁（最重要的後臺）<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>設定頁有 6 個分頁：</p>
+<ol>
+<li>商店</li>
+<li>機器人</li>
+<li>群組</li>
+<li>動作範本</li>
+<li>按鈕</li>
+<li>地圖分頁</li>
+</ol>
+<p>建議第一次使用時，照這個順序設定。</p>
+<h3 id="31">3.1 商店<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<p>用途：設定整體系統參數。</p>
+<p>主要欄位：</p>
+<ul>
+<li>商店名稱：畫面顯示用</li>
+<li>Pudu Shop ID：很多 API 會用到的門市 ID</li>
+<li>時區：通常用 <code>Asia/Taipei</code></li>
+<li>機器人並發：同時處理機器人的數量上限</li>
+<li>API 並發：同時打 API 的數量上限</li>
+<li>狀態輪詢秒數 / 位置輪詢秒數：更新頻率</li>
+</ul>
+<p>常見操作：</p>
+<ul>
+<li>按「儲存」更新設定</li>
+<li>按「讀取商店」從 Pudu 拉商店清單確認 shop_id</li>
+</ul>
+<h3 id="32">3.2 機器人<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<p>用途：管理要控制哪些機器人。</p>
+<p>可做的事：</p>
+<ul>
+<li>重建預設分組（清潔機器人 / 運送機器人）</li>
+<li>手動新增機器人（填 SN、暱稱）</li>
+<li>從 Pudu 匯入機器人（選 SN 批次匯入）</li>
+<li>編輯每臺機器人（改暱稱、啟用/停用、刪除）</li>
+</ul>
+<p>提醒：</p>
+<ul>
+<li>沒有啟用的機器人，不會在操作頁執行</li>
+<li>SN 一定要正確，錯 SN 會導致 API 打失敗</li>
+</ul>
+<h3 id="33">3.3 群組<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<p>用途：把多臺機器人整理成一組，方便查詢群組狀態或後續管理。</p>
+<p>可做的事：</p>
+<ul>
+<li>新增群組</li>
+<li>修改群組名稱</li>
+<li>勾選或取消群組成員</li>
+<li>儲存群組內容</li>
+<li>刪除群組</li>
+<li>一鍵重建「清潔機器人 / 運送機器人」預設群組</li>
+</ul>
+<p>提醒：</p>
+<ul>
+<li>API 測試頁查群組狀態時，可直接輸入群組名稱，例如「清潔機器人」或「運送機器人」</li>
+<li>若系統找不到 Pudu 雲端 group_id，會自動改用本地群組成員 SN 查詢</li>
+<li>群組沒有成員時，查群組狀態一定會失敗或回空資料</li>
+</ul>
+<h3 id="34">3.4 動作範本<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<p>用途：把「成功的 API 請求格式」存成可重複使用的模板。</p>
+<p>新增時要填：</p>
+<ul>
+<li>名稱：例如「切換到 A 地圖」</li>
+<li>Method：GET / POST / PUT / DELETE / PATCH</li>
+<li>Path：例如 <code>/open-platform-service/v1/switch_map</code></li>
+<li>Query Template JSON：GET 常用</li>
+<li>Body Template JSON：POST 常用</li>
+<li>Timeout(ms)</li>
+</ul>
+<p>重點觀念：</p>
+<ul>
+<li>如果是 GET，通常重點放在 Query Template JSON</li>
+<li>如果是 POST，通常重點放在 Body Template JSON</li>
+<li>建議先從 API 測試頁測成功，再複製過來</li>
+</ul>
+<h3 id="35">3.5 按鈕<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
+<p>用途：把多個動作範本組成一顆可執行按鈕。</p>
+<p>新增按鈕時：</p>
+<ul>
+<li>填按鈕名稱（例如「開店前巡檢」）</li>
+<li>可填描述</li>
+<li>設排序（數字小的通常排前面）</li>
+<li>至少綁定 1 個動作範本（可多選）</li>
+</ul>
+<p>執行時效果：</p>
+<ul>
+<li>在操作頁按下按鈕後，系統會依綁定順序執行範本</li>
+<li>每個機器人的成功/失敗都會顯示</li>
+</ul>
+<h3 id="36">3.6 地圖分頁<a class="headerlink" href="#36" title="Permanent link">&para;</a></h3>
+<p>用途：管理操作頁下拉選單中的地圖項目與顯示名稱。</p>
+<p>可做的事：</p>
+<ul>
+<li>手動新增 map_name</li>
+<li>設定顯示名稱（比較好懂）</li>
+<li>設定排序與啟用</li>
+<li>從 Pudu 讀取地圖作為參考</li>
+</ul>
+<p>提醒：</p>
+<ul>
+<li>map_name 要與實際 API 使用名稱一致</li>
+<li>map_name 不一致時，地圖載入與位置顯示會異常</li>
+</ul>
+<hr />
+<h2 id="4">4. 操作頁（現場執行頁）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>操作頁主要分三塊：</p>
+<ol>
+<li>按鈕執行</li>
+<li>機器人狀態</li>
+<li>地圖資訊 + 事件紀錄</li>
+</ol>
+<h3 id="41">4.1 按鈕執行<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<p>使用方式：</p>
+<ol>
+<li>先勾選本次要作用的機器人（可全選/全不選）</li>
+<li>按任一功能按鈕</li>
+<li>看展開結果：每臺機器人、每個動作 API 的成功/失敗</li>
+</ol>
+<p>結果會顯示：</p>
+<ul>
+<li>HTTP 狀態碼</li>
+<li>請求 URL / 路徑</li>
+<li>Query 與 Body</li>
+<li>回應 JSON</li>
+</ul>
+<h3 id="42">4.2 機器人狀態<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<p>可查看：</p>
+<ul>
+<li>在線/離線</li>
+<li>執行狀態</li>
+<li>即時位置資訊（搭配地圖）</li>
+</ul>
+<p>可用功能：</p>
+<ul>
+<li>「更新機器人狀態」手動刷新</li>
+<li>「每 10 秒自動更新機器人位置」自動刷新</li>
+</ul>
+<h3 id="43">4.3 地圖資訊<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<p>操作步驟：</p>
+<ol>
+<li>從下拉選地圖</li>
+<li>按「載入地圖資料」</li>
+<li>在預覽圖看到機器人點位</li>
+<li>需要時展開「地圖原始回應 JSON」或「地圖 API 除錯紀錄」</li>
+</ol>
+<p>常見狀況：</p>
+<ul>
+<li>有位置但不在圖上：可能機器人回傳的 map_name 跟你選的地圖不同</li>
+<li>地圖空白：可能 shop_id/map_name 錯誤</li>
+</ul>
+<h3 id="44">4.4 事件紀錄<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<p>按「讀取事件紀錄」後可看最近操作事件，包含：</p>
+<ul>
+<li>時間</li>
+<li>狀態</li>
+<li>事件類型</li>
+<li>來源</li>
+<li>機器人</li>
+</ul>
+<hr />
+<h2 id="5-api">5. API 測試頁（開發與驗證入口）<a class="headerlink" href="#5-api" title="Permanent link">&para;</a></h2>
+<p>這頁用來「先測到成功，再標準化成範本」。</p>
+<h3 id="51">5.1 你會看到的區塊<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<ul>
+<li>快速搜尋 API（名稱/路徑/ID）</li>
+<li>Method（GET/POST）</li>
+<li>常用 API（分類清單）或自訂輸入</li>
+<li>參數總覽（哪些必填）</li>
+<li>Query Params(JSON)</li>
+<li>Request Body(JSON)</li>
+<li>送出請求與結果 JSON</li>
+</ul>
+<h3 id="52-get-post">5.2 GET 與 POST 的填寫原則<a class="headerlink" href="#52-get-post" title="Permanent link">&para;</a></h3>
+<ul>
+<li>GET：主要填 Query Params（JSON）</li>
+<li>POST：主要填 Request Body（JSON）</li>
+</ul>
+<p>兩者都可能會用到：</p>
+<ul>
+<li>地圖名稱（map_name）</li>
+<li>SN 碼（sn）</li>
+<li>門市 ID（shop_id）</li>
+<li>時間欄位（start_time/end_time，支援日期字串，會自動轉時間戳）</li>
+</ul>
+<p>補充：</p>
+<ul>
+<li>「取得機器列表」與「取得地圖列表」若要填 shop_id，請先到設定頁查看商店的 Pudu Shop ID。</li>
+<li>「取得組狀態（按 Group ID）」回傳的 sn 常是 MAC 格式（例如 00:9C:17:25:7F:ED），不是一般機器序列號字串。</li>
+<li>「取得地圖詳情 V2」的 map_name，請到設定頁的地圖分頁複製（或用 API 測試頁快速帶入），避免手打錯字。</li>
+<li>切換地圖前，機器人要先停在地圖對位點（同一固定參考點）再切換，不然切圖後機器人點位會偏移。</li>
+</ul>
+<h3 id="53">5.3 推薦做法<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<ol>
+<li>先用「常用 API」選一支接近的</li>
+<li>看參數總覽補齊必填欄位</li>
+<li>用「快速帶入」把 shop_id/sn/map_name 帶進去</li>
+<li>送出請求</li>
+<li>直到回應成功（HTTP 2xx 且回應內容正確）</li>
+</ol>
+<h3 id="54">5.4 常用特殊規則速查<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<p>以下是這個系統裡最常用、也最容易搞混的規則。</p>
+<h4 id="a-v1-v2">A. 取得組狀態 V1 / V2<a class="headerlink" href="#a-v1-v2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>取得組狀態 V1：比較常拿來看多臺機器人的位置資訊</li>
+<li>取得組狀態 V2：除了狀態外，通常會多看到充電相關類型資訊</li>
+<li>V1 的設備名稱回傳常只看到 MAC 值</li>
+<li>V2 通常可看到 MAC 與 SN</li>
+<li>在這個網站裡，查組狀態時可以直接輸入群組名稱，不一定要自己找 group_id</li>
+<li>若輸入的是本地群組名稱，例如「清潔機器人」或「運送機器人」，系統會自動找出群組內機器人再查詢</li>
+</ul>
+<h4 id="b-v1-v2">B. 取得機器狀態 V1 / V2<a class="headerlink" href="#b-v1-v2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>取得機器狀態 V1：比較常拿來看位置與基本狀態</li>
+<li>取得機器狀態 V2：通常會比 V1 多一些充電類型或充電狀態相關資訊</li>
+<li>若你只想先確認機器在線、位置是否正常，通常先測 V1 就夠用</li>
+<li>若你要看更完整狀態，尤其是充電相關欄位，再看 V2</li>
+</ul>
+<h4 id="c-start_time-end_time">C. start_time / end_time 規則<a class="headerlink" href="#c-start_time-end_time" title="Permanent link">&para;</a></h4>
+<ul>
+<li>很多 API 的 <code>start_time</code> / <code>end_time</code> 最終都要送成 integer 秒級時間戳</li>
+<li>這個網站支援你直接輸入日期字串，例如 <code>2026/03/01</code>、<code>2026-03-01</code>、<code>2026/03/01 10:30:00</code></li>
+<li>系統送出前會自動轉成秒級時間戳</li>
+<li><code>start_time</code> 會自動轉成當天 <code>00:00:00</code></li>
+<li><code>end_time</code> 會自動轉成當天 <code>23:59:59</code></li>
+<li>若 API 文件明確要求 integer，看到畫面是日期字串不用緊張，送出時系統會幫你轉</li>
+</ul>
+<h4 id="d-map_name">D. map_name 規則<a class="headerlink" href="#d-map_name" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>map_name</code> 不要手打猜測，最好從設定頁的地圖分頁複製</li>
+<li><code>map_name</code> 只要差一個字、井字號 <code>#</code>、大小寫或特殊符號，就可能查不到資料</li>
+<li>切換地圖前，機器人最好先停在地圖對位點，不然切圖後位置可能偏掉</li>
+</ul>
+<h4 id="e-group_id">E. 群組名稱與 group_id 規則<a class="headerlink" href="#e-group_id" title="Permanent link">&para;</a></h4>
+<ul>
+<li>在本網站中，很多群組查詢可以直接填群組名稱</li>
+<li>若 Pudu 雲端 group API 查不到，但你本地群組存在，系統會自動 fallback 成「用群組成員 SN 一臺一臺查」</li>
+<li>如果畫面出現本地群組查詢提示，代表系統是用你設定頁的群組成員在查，不是壞掉</li>
+<li>如果群組裡沒有任何成員，fallback 也查不到資料</li>
+</ul>
+<h4 id="f">F. 取得語音列表規則<a class="headerlink" href="#f" title="Permanent link">&para;</a></h4>
+<ul>
+<li>取得語音列表只支援 Kettybot</li>
+<li>若回應 <code>CLOUD_OPEN_TIMEOUT</code>，通常不是你欄位填錯，而是雲端暫時連不到機器</li>
+<li>此時請先查該 SN 的機器狀態，確認是否在線</li>
+<li>若機器離線、關機，語音列表通常一定失敗</li>
+</ul>
+<h4 id="g-api">G. 地圖相關 API 規則<a class="headerlink" href="#g-api" title="Permanent link">&para;</a></h4>
+<ul>
+<li>取得地圖點位列表目前以 <code>sn</code> 為主，並可搭配 <code>limit</code>、<code>offset</code></li>
+<li>取得點位分組目前使用 <code>sn</code> 與 <code>map_name</code></li>
+<li>若地圖 API 有資料但地圖預覽沒有看到機器人，常見原因是機器人回報的 <code>map_name</code> 跟你目前選的地圖不同</li>
+</ul>
+<hr />
+<h2 id="6-api">6. 你的標準操作流程（API 測試 → 範本 → 按鈕）<a class="headerlink" href="#6-api" title="Permanent link">&para;</a></h2>
+<p>以下就是你指定的完整流程，照做即可。</p>
+<h3 id="a-api-api">步驟 A：在 API 測試找出可用 API<a class="headerlink" href="#a-api-api" title="Permanent link">&para;</a></h3>
+<ol>
+<li>到「API 測試」頁</li>
+<li>搜尋或選擇你要的 API</li>
+<li>根據 Method 填參數：</li>
+<li>GET 填 Query Params（JSON）</li>
+<li>POST 填 Request Body（JSON）</li>
+<li>常見欄位要填正確：地圖名稱、SN、門市 ID、時間</li>
+<li>按「送出請求」直到成功</li>
+</ol>
+<h3 id="b">步驟 B：複製成功請求內容<a class="headerlink" href="#b" title="Permanent link">&para;</a></h3>
+<p>成功後，從畫面保留以下內容：</p>
+<ul>
+<li>Method</li>
+<li>Path</li>
+<li>Query Params JSON（若為 GET）</li>
+<li>Request Body JSON（若為 POST）</li>
+</ul>
+<p>建議：先把這些內容暫存到記事本，避免切頁後忘記。</p>
+<h3 id="c">步驟 C：到設定頁新增動作範本<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
+<ol>
+<li>到「設定」頁 →「動作範本」</li>
+<li>按「新增動作範本」</li>
+<li>填寫：</li>
+<li>名稱（好辨識）</li>
+<li>Method（跟測試成功的一致）</li>
+<li>Path（貼上成功 Path）</li>
+<li>Query Template JSON 或 Body Template JSON（貼上成功 JSON）</li>
+<li>按「新增」</li>
+</ol>
+<h3 id="d">步驟 D：到設定頁按鈕綁定範本<a class="headerlink" href="#d" title="Permanent link">&para;</a></h3>
+<ol>
+<li>到「設定」頁 →「按鈕」</li>
+<li>新增按鈕，輸入名稱</li>
+<li>在「綁定動作範本」選你剛建的範本（可多選）</li>
+<li>按「新增」</li>
+</ol>
+<h3 id="e">步驟 E：到操作頁執行<a class="headerlink" href="#e" title="Permanent link">&para;</a></h3>
+<ol>
+<li>到「操作」頁</li>
+<li>勾選這次要執行的機器人</li>
+<li>按你剛建立的按鈕</li>
+<li>確認回應結果（HTTP 與 JSON）</li>
+</ol>
+<p>完成後，這顆按鈕就可以重複使用。</p>
+<hr />
+<h2 id="7-get-post">7. 範例：一個 GET 和一個 POST<a class="headerlink" href="#7-get-post" title="Permanent link">&para;</a></h2>
+<h3 id="71-get">7.1 GET 範例（查狀態）<a class="headerlink" href="#71-get" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Method: <code>GET</code></li>
+<li>Path: <code>/open-platform-service/v2/status/get_by_sn</code></li>
+<li>Query Params(JSON) 例如：</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;sn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PDxxxxxxxx&quot;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Body：留空 <code>{}</code>（GET 通常不用）</li>
+</ul>
+<h3 id="72-post">7.2 POST 範例（切換地圖）<a class="headerlink" href="#72-post" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Method: <code>POST</code></li>
+<li>Path: <code>/open-platform-service/v1/switch_map</code></li>
+<li>Query Params(JSON)：通常 <code>{}</code></li>
+<li>Body(JSON) 例如：</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;sn&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PDxxxxxxxx&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span><span class="nt">&quot;map_info&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">    </span><span class="nt">&quot;map_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1#1#內湖展間v20&quot;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>切換地圖注意事項：</p>
+<ul>
+<li>map_name 請從設定頁地圖分頁取得，不要自行猜測名稱。</li>
+<li>送切換前，請讓機器人先在地圖的對位點再切換，避免切換後點位跑掉。</li>
+</ul>
+<hr />
+<h2 id="8">8. 常見錯誤與排除<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<h3 id="81-api">8.1 API 回應失敗<a class="headerlink" href="#81-api" title="Permanent link">&para;</a></h3>
+<p>優先檢查：</p>
+<ul>
+<li>shop_id 是否正確</li>
+<li>sn 是否正確</li>
+<li>map_name 是否完全一致（含符號）</li>
+<li>GET/POST 是否選錯</li>
+</ul>
+<h3 id="82-json">8.2 JSON 解析失敗<a class="headerlink" href="#82-json" title="Permanent link">&para;</a></h3>
+<p>常見原因：</p>
+<ul>
+<li>少逗號或多逗號</li>
+<li>單引號寫成 JSON（請用雙引號）</li>
+<li>大括號不成對</li>
+</ul>
+<h3 id="83">8.3 按鈕按了沒效果<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<p>檢查：</p>
+<ul>
+<li>該按鈕是否有綁動作範本</li>
+<li>動作範本是否啟用</li>
+<li>目標機器人是否勾選且啟用</li>
+</ul>
+<h3 id="84">8.4 地圖載不出來<a class="headerlink" href="#84" title="Permanent link">&para;</a></h3>
+<p>檢查：</p>
+<ul>
+<li>設定頁的 Pudu Shop ID</li>
+<li>地圖名稱 map_name 是否匹配</li>
+<li>操作頁「地圖 API 除錯紀錄」是否有錯誤訊息</li>
+</ul>
+<hr />
+<h2 id="9-5">9. 新人上手最短路徑（5 分鐘）<a class="headerlink" href="#9-5" title="Permanent link">&para;</a></h2>
+<ol>
+<li>登入系統</li>
+<li>設定頁確認商店的 shop_id</li>
+<li>機器人分頁確認 SN 已匯入且啟用</li>
+<li>API 測試頁測一支成功 API</li>
+<li>把成功請求存成動作範本</li>
+<li>建立按鈕並綁範本</li>
+<li>到操作頁按按鈕測一次</li>
+</ol>
+<p>提醒：若你在「取得組狀態」看到 sn 長得像 00:9C:17:25:7F:ED，屬於正常格式。</p>
+<p>做到這裡，就完成一個可重複執行的工作按鈕。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "search.share", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

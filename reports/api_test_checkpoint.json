@@ -1,0 +1,10 @@
+{
+  "updated_at": "2026-04-24T09:14:45.164599",
+  "total": 218,
+  "done": 218,
+  "pending": 0,
+  "last_key": "log_error|GET|/data-board/v1/log/error/query_list|8PP044808050001|",
+  "last_api": "log_error",
+  "progress_jsonl": "reports\\api_test_progress.jsonl",
+  "live_progress_md": "reports\\api_test_live_progress.md"
+}

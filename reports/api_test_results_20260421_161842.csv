@@ -1,0 +1,219 @@
+﻿category,api_id,api_name,method,path,supported_models,target_sn,target_model,map_name,status_code,http_ok,message,json_success,result_type
+【數據查詢】,shop_list,獲取門店列表,GET,/data-open-platform-service/v1/api/shop,ALL,,,,200,True,success,,OK_MESSAGE_SUCCESS
+【數據查詢】,robot_list,獲取機器列表,GET,/data-open-platform-service/v1/api/robot,ALL,,,,200,True,success,,OK_MESSAGE_SUCCESS
+【數據查詢】,map_list,獲取地圖列表,GET,/data-open-platform-service/v1/api/maps,ALL,,,,200,True,ok,,OK_MESSAGE_NOT_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,8170F4124050003,PuduBot2,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,826094913050022,PuduT300,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,83A025B13070005,PuduT600Underride,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,868025904070005,MT1Max,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,888015806070013,CC1Pro,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,899025912070010,MT1Vac,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v1,獲取機器狀態 V1（按SN）,GET,/open-platform-service/v1/status/get_by_sn,ALL,8PP044808050001,KettyBot,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_group_id_v1,獲取組狀態 V1（按Group ID）,GET,/open-platform-service/v1/status/get_by_group_id,ALL,,,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,8170F4124050003,PuduBot2,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,826094913050022,PuduT300,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,83A025B13070005,PuduT600Underride,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,868025904070005,MT1Max,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,888015806070013,CC1Pro,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,899025912070010,MT1Vac,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_sn_v2,獲取機器狀態 V2（按SN）,GET,/open-platform-service/v2/status/get_by_sn,ALL,8PP044808050001,KettyBot,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,status_by_group_id_v2,獲取組狀態 V2（按Group ID）,GET,/open-platform-service/v2/status/get_by_group_id,ALL,,,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,robot_task_state,獲取機器任務狀態,GET,/open-platform-service/v1/robot/task/state/get,FlashBot,,,,SKIP,False,No matched robots for supported_models,,SKIPPED_NO_MATCHED_ROBOT
+【機器狀態】,cleanbot_detail,獲取清潔機器狀態詳情,GET,/cleanbot-service/v1/api/open/robot/detail,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,868025904070005,MT1Max,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,cleanbot_detail,獲取清潔機器狀態詳情,GET,/cleanbot-service/v1/api/open/robot/detail,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,888015806070013,CC1Pro,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器狀態】,cleanbot_detail,獲取清潔機器狀態詳情,GET,/cleanbot-service/v1/api/open/robot/detail,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,899025912070010,MT1Vac,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,8170F4124050003,PuduBot2,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,8170F4124050003,PuduBot2,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,826094913050022,PuduT300,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,826094913050022,PuduT300,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,83A025B13070005,PuduT600Underride,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,83A025B13070005,PuduT600Underride,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,868025904070005,MT1Max,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,868025904070005,MT1Max,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,888015806070013,CC1Pro,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,888015806070013,CC1Pro,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,899025912070010,MT1Vac,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,899025912070010,MT1Vac,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,8FF055923050007,FlashBotMax,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,8FF055923050007,FlashBotMax,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,8PP044808050001,KettyBot,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_current,機器當前使用地圖,GET,/map-service/v1/open/current,ALL,8PP044808050001,KettyBot,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,8170F4124050003,PuduBot2,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,8170F4124050003,PuduBot2,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,826094913050022,PuduT300,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,826094913050022,PuduT300,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,83A025B13070005,PuduT600Underride,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,83A025B13070005,PuduT600Underride,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,868025904070005,MT1Max,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,868025904070005,MT1Max,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,888015806070013,CC1Pro,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,888015806070013,CC1Pro,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,899025912070010,MT1Vac,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,899025912070010,MT1Vac,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,8FF055923050007,FlashBotMax,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,8FF055923050007,FlashBotMax,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,8PP044808050001,KettyBot,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_list_by_robot,獲取機器可用地圖列表,GET,/map-service/v1/open/list,ALL,8PP044808050001,KettyBot,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_detail_v1,獲取地圖詳情 V1,GET,/map-service/v1/open/map,ALL,,,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_detail_v1,獲取地圖詳情 V1,GET,/map-service/v1/open/map,ALL,,,1#7#內湖展間清潔v4,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,8170F4124050003,PuduBot2,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,826094913050022,PuduT300,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,83A025B13070005,PuduT600Underride,,500,False,CLOUD_OPEN_ROBOT_OFFLINE,,HTTP_ERROR
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,868025904070005,MT1Max,,500,False,CLOUD_OPEN_ROBOT_OFFLINE,,HTTP_ERROR
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,888015806070013,CC1Pro,,500,False,CLOUD_OPEN_ROBOT_OFFLINE,,HTTP_ERROR
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,899025912070010,MT1Vac,,500,False,CLOUD_OPEN_ROBOT_OFFLINE,,HTTP_ERROR
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,robot_position,獲取機器實時位置,GET,/open-platform-service/v1/robot/get_position,ALL,8PP044808050001,KettyBot,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,map_points,獲取地圖點位列表,GET,/map-service/v1/open/point,ALL,,,1#1#內湖展間v20,500,False,MAP_ROBOT_ERROR,,HTTP_ERROR
+【地圖與位置】,map_points,獲取地圖點位列表,GET,/map-service/v1/open/point,ALL,,,1#7#內湖展間清潔v4,500,False,MAP_ROBOT_ERROR,,HTTP_ERROR
+【地圖與位置】,map_group,獲取點位分組,POST,/map-service/v1/open/group,PuduT300,,,1#1#內湖展間v20,500,False,MAP_ROBOT_ERROR,,HTTP_ERROR
+【地圖與位置】,map_group,獲取點位分組,POST,/map-service/v1/open/group,PuduT300,,,1#7#內湖展間清潔v4,500,False,MAP_ROBOT_ERROR,,HTTP_ERROR
+【地圖與位置】,switch_map,切換機器地圖,POST,/open-platform-service/v1/switch_map,PuduT300,826094913050022,PuduT300,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【地圖與位置】,switch_map,切換機器地圖,POST,/open-platform-service/v1/switch_map,PuduT300,826094913050022,PuduT300,1#7#內湖展間清潔v4,200,True,CLOUD_OPEN_UNABLE_COMPLETE_TASK,,OK_MESSAGE_NOT_SUCCESS
+【地圖與位置】,switch_map_in_elevator,電梯內切換地圖,POST,/open-platform-service/v1/robot/map/switch_in_elevator,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | PuduT300,826094913050022,PuduT300,1#1#內湖展間v20,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【地圖與位置】,switch_map_in_elevator,電梯內切換地圖,POST,/open-platform-service/v1/robot/map/switch_in_elevator,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | PuduT300,826094913050022,PuduT300,1#7#內湖展間清潔v4,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【地圖與位置】,switch_map_in_elevator,電梯內切換地圖,POST,/open-platform-service/v1/robot/map/switch_in_elevator,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | PuduT300,8FF055923050007,FlashBotMax,1#1#內湖展間v20,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【地圖與位置】,switch_map_in_elevator,電梯內切換地圖,POST,/open-platform-service/v1/robot/map/switch_in_elevator,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | PuduT300,8FF055923050007,FlashBotMax,1#7#內湖展間清潔v4,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8170F4124050003,PuduBot2,1#1#內湖展間v20,200,True,CLOUD_OPEN_QUEUE_LIMIT,,OK_MESSAGE_NOT_SUCCESS
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8170F4124050003,PuduBot2,1#7#內湖展間清潔v4,200,True,CLOUD_OPEN_QUEUE_LIMIT,,OK_MESSAGE_NOT_SUCCESS
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,826094913050022,PuduT300,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,826094913050022,PuduT300,1#7#內湖展間清潔v4,200,True,CLOUD_OPEN_QUEUE_LIMIT,,OK_MESSAGE_NOT_SUCCESS
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8FF055923050007,FlashBotMax,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8FF055923050007,FlashBotMax,1#7#內湖展間清潔v4,200,True,CLOUD_OPEN_QUEUE_LIMIT,,OK_MESSAGE_NOT_SUCCESS
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8PP044808050001,KettyBot,1#1#內湖展間v20,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,custom_call,發起呼叫任務,POST,/open-platform-service/v1/custom_call,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8PP044808050001,KettyBot,1#7#內湖展間清潔v4,200,True,CLOUD_OPEN_QUEUE_LIMIT,,OK_MESSAGE_NOT_SUCCESS
+【呼叫與配送】,custom_call_cancel,取消呼叫任務,POST,/open-platform-service/v1/custom_call/cancel,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8170F4124050003,PuduBot2,,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【呼叫與配送】,custom_call_cancel,取消呼叫任務,POST,/open-platform-service/v1/custom_call/cancel,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,826094913050022,PuduT300,,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【呼叫與配送】,custom_call_cancel,取消呼叫任務,POST,/open-platform-service/v1/custom_call/cancel,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8FF055923050007,FlashBotMax,,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【呼叫與配送】,custom_call_cancel,取消呼叫任務,POST,/open-platform-service/v1/custom_call/cancel,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8PP044808050001,KettyBot,,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【呼叫與配送】,custom_call_complete,完成呼叫任務,POST,/open-platform-service/v1/custom_call/complete,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300,,,1#1#內湖展間v20,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【呼叫與配送】,custom_call_complete,完成呼叫任務,POST,/open-platform-service/v1/custom_call/complete,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300,,,1#7#內湖展間清潔v4,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【呼叫與配送】,custom_content,發送自定義展示內容,POST,/open-platform-service/v1/custom_content,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | BellaBot Pro | PuduT300 | PuduBot2,8170F4124050003,PuduBot2,,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【呼叫與配送】,custom_content,發送自定義展示內容,POST,/open-platform-service/v1/custom_content,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | BellaBot Pro | PuduT300 | PuduBot2,826094913050022,PuduT300,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,custom_content,發送自定義展示內容,POST,/open-platform-service/v1/custom_content,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | BellaBot Pro | PuduT300 | PuduBot2,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,call_list,獲取呼叫列表,GET,/open-platform-service/v1/call/list,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8170F4124050003,PuduBot2,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,call_list,獲取呼叫列表,GET,/open-platform-service/v1/call/list,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,826094913050022,PuduT300,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,call_list,獲取呼叫列表,GET,/open-platform-service/v1/call/list,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,call_list,獲取呼叫列表,GET,/open-platform-service/v1/call/list,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | FlashBot | KettyBot | BellaBot | Pudu Bot2 | HolaBot,8PP044808050001,KettyBot,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,delivery_task,發起配送任務,POST,/open-platform-service/v1/delivery_task,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | BellaBot | Pudu Bot2,8170F4124050003,PuduBot2,,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【呼叫與配送】,delivery_task,發起配送任務,POST,/open-platform-service/v1/delivery_task,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | BellaBot | Pudu Bot2,826094913050022,PuduT300,,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【呼叫與配送】,delivery_task,發起配送任務,POST,/open-platform-service/v1/delivery_task,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | BellaBot | Pudu Bot2,8FF055923050007,FlashBotMax,,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【呼叫與配送】,delivery_action,配送指令,POST,/open-platform-service/v1/delivery_action,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | BellaBot | Pudu Bot2,8170F4124050003,PuduBot2,,200,True,CLOUD_OPEN_UNABLE_COMPLETE_TASK,,OK_MESSAGE_NOT_SUCCESS
+【呼叫與配送】,delivery_action,配送指令,POST,/open-platform-service/v1/delivery_action,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | BellaBot | Pudu Bot2,826094913050022,PuduT300,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,delivery_action,配送指令,POST,/open-platform-service/v1/delivery_action,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300 | BellaBot | Pudu Bot2,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【呼叫與配送】,cancel_task,取消任務（舊版）,POST,/open-platform-service/v1/cancel_task,Flashbot,,,,SKIP,False,No matched robots for supported_models,,SKIPPED_NO_MATCHED_ROBOT
+【運送與託盤】,transport_task,發起運送任務,POST,/open-platform-service/v1/transport_task,PuduBot2,8170F4124050003,PuduBot2,,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【運送與託盤】,transport_action,運送指令,POST,/open-platform-service/v1/transport_action,PuduBot2,8170F4124050003,PuduBot2,,200,True,CLOUD_OPEN_UNKNOW_ERROR,,OK_MESSAGE_NOT_SUCCESS
+【運送與託盤】,tray_order,託盤推送任務（舊版）,POST,/open-platform-service/v1/tray_order,Flashbot,,,,SKIP,False,No matched robots for supported_models,,SKIPPED_NO_MATCHED_ROBOT
+【運送與託盤】,task_errand,發起跑腿任務,POST,/open-platform-service/v1/task_errand,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra,8FF055923050007,FlashBotMax,1#1#內湖展間v20,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【運送與託盤】,task_errand,發起跑腿任務,POST,/open-platform-service/v1/task_errand,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra,8FF055923050007,FlashBotMax,1#7#內湖展間清潔v4,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【運送與託盤】,errand_action,跑腿任務指令,POST,/open-platform-service/v1/errand_action,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra,8FF055923050007,FlashBotMax,,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【運送與託盤】,lifting_task,發起頂升任務,POST,/open-platform-service/v1/lifting_task,PuduT300,826094913050022,PuduT300,,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【運送與託盤】,lifting_action,頂升任務指令,POST,/open-platform-service/v1/lifting_action,PuduT300,826094913050022,PuduT300,,500,False,CLOUD_OPEN_TASK_NOT_EXISTS,,HTTP_ERROR
+【巡航】,cruise_task,發起巡航任務,POST,/open-platform-service/v1/cruise_task,PuduBot2,8170F4124050003,PuduBot2,,200,True,CLOUD_OPEN_UNABLE_COMPLETE_TASK,,OK_MESSAGE_NOT_SUCCESS
+【巡航】,cruise_action,巡航控制指令,POST,/open-platform-service/v1/cruise_action,PuduBot2,8170F4124050003,PuduBot2,,200,True,CLOUD_OPEN_UNABLE_COMPLETE_TASK,,OK_MESSAGE_NOT_SUCCESS
+【巡航】,get_cruise_line,獲取巡航路徑,GET,/open-platform-service/v1/get_cruise_line,PuduBot2,8170F4124050003,PuduBot2,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【清潔】,cleanbot_task_list,清潔任務列表,GET,/cleanbot-service/v1/api/open/task/list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,868025904070005,MT1Max,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【清潔】,cleanbot_task_list,清潔任務列表,GET,/cleanbot-service/v1/api/open/task/list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,888015806070013,CC1Pro,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【清潔】,cleanbot_task_list,清潔任務列表,GET,/cleanbot-service/v1/api/open/task/list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,899025912070010,MT1Vac,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【清潔】,cleanbot_task_exec,清潔任務指令,POST,/cleanbot-service/v1/api/open/task/exec,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,868025904070005,MT1Max,,500,False,SYSTEM_ERROR,,HTTP_ERROR
+【清潔】,cleanbot_task_exec,清潔任務指令,POST,/cleanbot-service/v1/api/open/task/exec,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,888015806070013,CC1Pro,,500,False,SYSTEM_ERROR,,HTTP_ERROR
+【清潔】,cleanbot_task_exec,清潔任務指令,POST,/cleanbot-service/v1/api/open/task/exec,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,899025912070010,MT1Vac,,500,False,SYSTEM_ERROR,,HTTP_ERROR
+【清潔】,cleanbot_cron_list,清潔定時任務列表,GET,/cleanbot-service/v1/api/open/cron/list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,868025904070005,MT1Max,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【清潔】,cleanbot_cron_list,清潔定時任務列表,GET,/cleanbot-service/v1/api/open/cron/list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,888015806070013,CC1Pro,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【清潔】,cleanbot_cron_list,清潔定時任務列表,GET,/cleanbot-service/v1/api/open/cron/list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,899025912070010,MT1Vac,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【廣告管理】,gg_list,獲取廣告列表,POST,/biz-service/openPlatform/api/v1/gg/list,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,8PP044808050001,KettyBot,,200,True,success,,OK_MESSAGE_SUCCESS
+【廣告管理】,gg_get,獲取廣告詳情,GET,/biz-service/openPlatform/api/v1/gg/get,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,,,,200,True,"parsing field ""id"": strconv.ParseInt: parsing ""demo"": invalid syntax",,OK_MESSAGE_NOT_SUCCESS
+【廣告管理】,gg_create,新增廣告,POST,/biz-service/openPlatform/api/v1/gg/create,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,8PP044808050001,KettyBot,1#1#內湖展間v20,200,True,"error: code = 400 reason = CODEC message = proto: (line 1:71): invalid value for int64 type: ""demo"" metadata = map[]",,OK_MESSAGE_NOT_SUCCESS
+【廣告管理】,gg_create,新增廣告,POST,/biz-service/openPlatform/api/v1/gg/create,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,8PP044808050001,KettyBot,1#7#內湖展間清潔v4,200,True,"error: code = 400 reason = CODEC message = proto: (line 1:71): invalid value for int64 type: ""demo"" metadata = map[]",,OK_MESSAGE_NOT_SUCCESS
+【廣告管理】,gg_update,更新廣告,POST,/biz-service/openPlatform/api/v1/gg/update,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,8PP044808050001,KettyBot,1#1#內湖展間v20,200,True,"error: code = 400 reason = CODEC message = proto: (line 1:13): invalid value for int64 type: ""demo"" metadata = map[]",,OK_MESSAGE_NOT_SUCCESS
+【廣告管理】,gg_update,更新廣告,POST,/biz-service/openPlatform/api/v1/gg/update,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,8PP044808050001,KettyBot,1#7#內湖展間清潔v4,200,True,"error: code = 400 reason = CODEC message = proto: (line 1:13): invalid value for int64 type: ""demo"" metadata = map[]",,OK_MESSAGE_NOT_SUCCESS
+【廣告管理】,gg_delete,刪除廣告,POST,/biz-service/openPlatform/api/v1/gg/delete,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,,,,200,True,"error: code = 400 reason = CODEC message = proto: (line 1:7): invalid value for int64 type: ""demo"" metadata = map[]",,OK_MESSAGE_NOT_SUCCESS
+【廣告管理】,gg_scenes_list,獲取廣告場景,POST,/biz-service/openPlatform/api/v1/gg/scenesMenu/list,KettyBot | KettyBot Pro | BellaBot | BellaBot Pro,,,,200,True,"error: code = 400 reason = CODEC message = proto: (line 1:9): invalid value for int32 type: ""demo"" metadata = map[]",,OK_MESSAGE_NOT_SUCCESS
+【機器人控制】,control_doors,艙門控制,POST,/open-platform-service/v1/control_doors,Flashbot | FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra,8FF055923050007,FlashBotMax,,500,False,CLOUD_OPEN_UNKNOW_ERROR,,HTTP_ERROR
+【機器人控制】,door_state,獲取門禁狀態,GET,/open-platform-service/v1/door_state,Flashbot | FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器人控制】,robot_screen_set,設置機器屏幕（舊版）,POST,/open-platform-service/v1/robot/screen/set,Flashbot,,,,SKIP,False,No matched robots for supported_models,,SKIPPED_NO_MATCHED_ROBOT
+【機器人控制】,position_command,通知機器上報位置,POST,/open-platform-service/v1/position_command,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300,826094913050022,PuduT300,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器人控制】,position_command,通知機器上報位置,POST,/open-platform-service/v1/position_command,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | KettyBot Pro | BellaBot Pro | PuduT300,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【機器人組與列表】,robot_group_list,獲取機器人組列表,GET,/open-platform-service/v1/robot/group/list,ALL,,,,500,False,CLOUD_OPEN_ROBOT_PARAM_ERROR,,HTTP_ERROR
+【機器人組與列表】,robot_list_by_device_and_group,按組或設備類型列表機器,GET,/open-platform-service/v1/robot/list_by_device_and_group,ALL,,,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【聲音控制】,voice_list,獲取語音列表,GET,/open-platform-service/v1/voice/list,Kettybot,8PP044808050001,KettyBot,,500,False,CLOUD_OPEN_TIMEOUT,,HTTP_ERROR
+【聲音控制】,voice_play,播放音頻,POST,/open-platform-service/v1/voice/play,Kettybot,8PP044808050001,KettyBot,,500,False,CLOUD_OPEN_TIMEOUT,,HTTP_ERROR
+【聲音控制】,voice_action,播放控制指令,POST,/open-platform-service/v1/voice/action,Kettybot,8PP044808050001,KettyBot,,500,False,CLOUD_OPEN_TIMEOUT,,HTTP_ERROR
+【聲音控制】,volume_set,設置機器音量,POST,/open-platform-service/v1/volume/set,Kettybot,8PP044808050001,KettyBot,,500,False,CLOUD_OPEN_TIMEOUT,,HTTP_ERROR
+【充電】,recharge_v1,機器人一鍵回充 V1,GET,/open-platform-service/v1/recharge,PuduBot2,8170F4124050003,PuduBot2,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【充電】,recharge_v2,機器人一鍵回充 V2,GET,/open-platform-service/v2/recharge,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | PuduT300,826094913050022,PuduT300,,200,True,CLOUD_OPEN_UNABLE_COMPLETE_TASK,,OK_MESSAGE_NOT_SUCCESS
+【充電】,recharge_v2,機器人一鍵回充 V2,GET,/open-platform-service/v2/recharge,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra | PuduT300,8FF055923050007,FlashBotMax,,200,True,SUCCESS,,OK_MESSAGE_SUCCESS
+【其他功能】,robot_door_task_list,機器人門禁任務列表,POST,/biz-open-service/v1/robotDoor/task_list,FlashBot 2025 | FlashBot Pro | FlashBot Max | FlashBot Ultra,8FF055923050007,FlashBotMax,,200,True,success,,OK_MESSAGE_SUCCESS
+【其他功能】,analysis_shop,門店數據分析,GET,/data-board/v1/analysis/shop,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_shop_paging,門店數據分析（分頁）,GET,/data-board/v1/analysis/shop/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_run,巡航數據分析,GET,/data-board/v1/analysis/run,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_run_paging,巡航數據分析（分頁）,GET,/data-board/v1/analysis/run/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_clean_detail,清潔詳細數據分析,GET,/data-board/v1/analysis/clean/detail,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_clean_mode,清潔模式分析,GET,/data-board/v1/analysis/clean/mode,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_clean_paging,清潔數據分析（分頁）,GET,/data-board/v1/analysis/clean/paging,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_shop,門店摘要數據,GET,/data-board/v1/brief/shop,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_run,巡航摘要數據,GET,/data-board/v1/brief/run,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,8170F4124050003,PuduBot2,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,826094913050022,PuduT300,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,83A025B13070005,PuduT600Underride,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,868025904070005,MT1Max,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,888015806070013,CC1Pro,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,899025912070010,MT1Vac,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,8FF055923050007,FlashBotMax,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,brief_robot,機器人摘要數據,GET,/data-board/v1/brief/robot,ALL,8PP044808050001,KettyBot,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,task_call,呼叫任務詳情,GET,/data-board/v1/task/call,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,task_delivery,配送任務詳情,GET,/data-board/v1/task/delivery,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,task_greeter,迎賓任務詳情,GET,/data-board/v1/task/greeter,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,task_lifting,頂升任務詳情,GET,/data-board/v1/task/lifting,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,task_recovery,回盤任務詳情,GET,/data-board/v1/task/recovery,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_call,呼叫任務統計,GET,/data-board/v1/analysis/task/call,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_call_paging,呼叫任務統計（分頁）,GET,/data-board/v1/analysis/task/call/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_delivery,配送任務統計,GET,/data-board/v1/analysis/task/delivery,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_delivery_paging,配送任務統計（分頁）,GET,/data-board/v1/analysis/task/delivery/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_cruise,巡航任務統計,GET,/data-board/v1/analysis/task/cruise,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_cruise_paging,巡航任務統計（分頁）,GET,/data-board/v1/analysis/task/cruise/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_greeter,迎賓任務統計,GET,/data-board/v1/analysis/task/greeter,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_greeter_paging,迎賓任務統計（分頁）,GET,/data-board/v1/analysis/task/greeter/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_lifting,頂升任務統計,GET,/data-board/v1/analysis/task/lifting,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_lifting_paging,頂升任務統計（分頁）,GET,/data-board/v1/analysis/task/lifting/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_recovery,回盤任務統計,GET,/data-board/v1/analysis/task/recovery,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_recovery_paging,回盤任務統計（分頁）,GET,/data-board/v1/analysis/task/recovery/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_solicit,攬客任務統計,GET,/data-board/v1/analysis/task/solicit,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_solicit_paging,攬客任務統計（分頁）,GET,/data-board/v1/analysis/task/solicit/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_interactive,互動任務統計,GET,/data-board/v1/analysis/task/interactive,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_interactive_paging,互動任務統計（分頁）,GET,/data-board/v1/analysis/task/interactive/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_ad,廣告任務統計,GET,/data-board/v1/analysis/task/ad,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_ad_paging,廣告任務統計（分頁）,GET,/data-board/v1/analysis/task/ad/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_grid,宮格任務統計,GET,/data-board/v1/analysis/task/grid,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,analysis_task_grid_paging,宮格任務統計（分頁）,GET,/data-board/v1/analysis/task/grid/paging,ALL,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,8170F4124050003,PuduBot2,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,826094913050022,PuduT300,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,83A025B13070005,PuduT600Underride,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,868025904070005,MT1Max,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,888015806070013,CC1Pro,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,899025912070010,MT1Vac,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,8FF055923050007,FlashBotMax,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_boot,開機日誌,GET,/data-board/v1/log/boot/query_list,ALL,8PP044808050001,KettyBot,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,8170F4124050003,PuduBot2,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,826094913050022,PuduT300,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,83A025B13070005,PuduT600Underride,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,868025904070005,MT1Max,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,888015806070013,CC1Pro,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,899025912070010,MT1Vac,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,8FF055923050007,FlashBotMax,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_charge,充電日誌,GET,/data-board/v1/log/charge/query_list,ALL,8PP044808050001,KettyBot,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_clean_task,清潔任務日誌,GET,/data-board/v1/log/clean_task/query_list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,868025904070005,MT1Max,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_clean_task,清潔任務日誌,GET,/data-board/v1/log/clean_task/query_list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,888015806070013,CC1Pro,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_clean_task,清潔任務日誌,GET,/data-board/v1/log/clean_task/query_list,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,899025912070010,MT1Vac,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_clean_task_detail,清潔任務詳細查詢,GET,/data-board/v1/log/clean_task/query,CC1 | CC1 Pro | MT1 | MT1 Vac | MT1 Max,,,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,8170F4124050003,PuduBot2,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,826094913050022,PuduT300,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,83A025B13070005,PuduT600Underride,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,868025904070005,MT1Max,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,888015806070013,CC1Pro,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,899025912070010,MT1Vac,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,8FF055923050007,FlashBotMax,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR
+【其他功能】,log_error,故障/事件日誌,GET,/data-board/v1/log/error/query_list,ALL,8PP044808050001,KettyBot,,500,False,DM_SYSTEM_ERROR,,HTTP_ERROR

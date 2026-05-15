@@ -1,0 +1,64 @@
+:root {
+  --md-text-font: "PMingLiU", "新細明體", "MingLiU", serif;
+  --md-code-font: "Consolas", "Courier New", monospace;
+}
+
+/* 回傳範例：對齊常見 API 文件風格（淺灰底、清楚行號、JSON 高可讀配色） */
+[data-md-color-scheme="default"] .md-typeset .highlight {
+  border: 1px solid #d8dde8;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 #eef2f8;
+}
+
+[data-md-color-scheme="default"] .md-typeset .highlight pre,
+[data-md-color-scheme="default"] .md-typeset .highlighttable {
+  background: #f2f5fa;
+}
+
+[data-md-color-scheme="default"] .md-typeset .highlighttable .linenos,
+[data-md-color-scheme="default"] .md-typeset .highlighttable .linenodiv {
+  background: #eaf0f8;
+  color: #6d7f9a;
+  border-right: 1px solid #d8dde8;
+}
+
+[data-md-color-scheme="default"] .md-typeset .highlighttable .linenos pre,
+[data-md-color-scheme="default"] .md-typeset .highlighttable .code pre,
+[data-md-color-scheme="default"] .md-typeset .highlight pre code {
+  line-height: 1.55;
+  font-size: 0.83rem;
+}
+
+/* JSON 語法色（Pygments token） */
+[data-md-color-scheme="default"] .md-typeset .highlight .p,
+[data-md-color-scheme="default"] .md-typeset .highlight .w {
+  color: #5f6e86;
+}
+
+[data-md-color-scheme="default"] .md-typeset .highlight .nt,
+[data-md-color-scheme="default"] .md-typeset .highlight .na {
+  color: #1b66c9;
+}
+
+[data-md-color-scheme="default"] .md-typeset .highlight .s,
+[data-md-color-scheme="default"] .md-typeset .highlight .s1,
+[data-md-color-scheme="default"] .md-typeset .highlight .s2 {
+  color: #7b3fc6;
+}
+
+[data-md-color-scheme="default"] .md-typeset .highlight .m,
+[data-md-color-scheme="default"] .md-typeset .highlight .mi,
+[data-md-color-scheme="default"] .md-typeset .highlight .mf,
+[data-md-color-scheme="default"] .md-typeset .highlight .kc {
+  color: #0b8a61;
+}
+
+/* 防呆：若型別寫成 Array<object> 被當 HTML 標籤，避免撐爆表格版面 */
+.md-typeset table object {
+  display: inline;
+  width: auto !important;
+  height: auto !important;
+  min-height: 0;
+  vertical-align: baseline;
+}

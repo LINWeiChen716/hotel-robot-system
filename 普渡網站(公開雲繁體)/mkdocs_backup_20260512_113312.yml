@@ -1,0 +1,192 @@
+site_name: Pudu Cloud API 說明書
+site_description: 普渡雲開放平臺 API 技術文件
+docs_dir: docs
+theme:
+  name: material
+  language: zh
+  palette:
+  - scheme: default
+    primary: blue
+    accent: blue
+    toggle:
+      icon: material/brightness-7
+      name: 切換至深色模式
+  - scheme: slate
+    primary: blue
+    accent: blue
+    toggle:
+      icon: material/brightness-4
+      name: 切換至淺色模式
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.top
+  - search.highlight
+  - search.share
+  - content.code.copy
+markdown_extensions:
+- pymdownx.highlight:
+    anchor_linenums: true
+    linenums: true
+- pymdownx.superfences
+- pymdownx.tabbed:
+    alternate_style: true
+- tables
+- toc:
+    permalink: true
+extra_css:
+- stylesheets/extra.css
+nav:
+- 首頁: index.md
+- 開發指南:
+  - 概述: guide/概述.md
+  - 快速開始: guide/快速開始.md
+  - 簽名生成和認證流程: guide/簽名生成和認證流程.md
+- 回調通知:
+  - 機器異常故障回呼(10分鐘延遲)-robotErrorWarning: callback/機器異常故障回呼_10分鐘延遲_-robotErrorWarning.md
+  - 異常實時通知-robotErrorNotice: callback/異常實時通知-robotErrorNotice.md
+  - 機器綁定門市通知-robotBinding: callback/機器綁定門市通知-robotBinding.md
+  - 機器解綁門市通知-robotUnBinding: callback/機器解綁門市通知-robotUnBinding.md
+  - 機器激活通知-robotActivate: callback/機器激活通知-robotActivate.md
+  - 機器在線_離線狀態變更通知-robotStatus: callback/機器在線_離線狀態變更通知-robotStatus.md
+  - 急停恢復通知-robotEmergencyRecover: callback/急停恢復通知-robotEmergencyRecover.md
+  - 機器工作狀態通知-notifyRobotStatus: callback/機器工作狀態通知-notifyRobotStatus.md
+  - 地圖資訊(元素點)上傳_變更_刪除-mapElementChange: callback/地圖資訊_元素點_上傳_變更_刪除-mapElementChange.md
+  - 機器位置上報-notifyRobotPose: callback/機器位置上報-notifyRobotPose.md
+  - 機器移動狀態通知-notifyRobotMoveState: callback/機器移動狀態通知-notifyRobotMoveState.md
+  - 切換地圖的任務通知-notifySwitchMap: callback/切換地圖的任務通知-notifySwitchMap.md
+  - 呼叫狀態通知-notifyCustomCall: callback/呼叫狀態通知-notifyCustomCall.md
+  - 訂單通知-notifyRobotOrderState: callback/訂單通知-notifyRobotOrderState.md
+  - 機器人點位配送通知-robotDeliveryStatus: callback/機器人點位配送通知-robotDeliveryStatus.md
+  - 工業場景運送通知-notifyTransportTask: callback/工業場景運送通知-notifyTransportTask.md
+  - 配送任務通知-notifyDeliveryTask: callback/配送任務通知-notifyDeliveryTask.md
+  - 跑腿任務通知-notifyErrandStatus: callback/跑腿任務通知-notifyErrandStatus.md
+  - 頂升任務通知-notifyLiftingTask: callback/頂升任務通知-notifyLiftingTask.md
+  - 清潔機器定時任務狀態通知-TASK_STATUS: callback/清潔機器定時任務狀態通知-TASK_STATUS.md
+  - 清潔任務狀態通知-notifyCleanStatus: callback/清潔任務狀態通知-notifyCleanStatus.md
+  - 巡航任務狀態通知-notifyCruiseTask: callback/巡航任務狀態通知-notifyCruiseTask.md
+  - 機器電量通知-notifyRobotPower: callback/機器電量通知-notifyRobotPower.md
+  - 艙門狀態通知-notifyDoorsState: callback/艙門狀態通知-notifyDoorsState.md
+  - 機器梯控通知-notifyElevatorUtilizeState: callback/機器梯控通知-notifyElevatorUtilizeState.md
+  - 二維碼消息通知-notifyQrCodeContent: callback/二維碼消息通知-notifyQrCodeContent.md
+  - 頂升機構狀態通知-notifyLiftingStatus: callback/頂升機構狀態通知-notifyLiftingStatus.md
+  - 回充狀態通知-notifyRechargeStatus: callback/回充狀態通知-notifyRechargeStatus.md
+- 通用接口:
+  - 取得機器當前使用地圖呼叫範例: common/取得機器當前使用地圖呼叫範例.md
+  - 機器可用地圖列表: common/機器可用地圖列表.md
+  - 機器當前使用地圖: common/機器當前使用地圖.md
+  - 繪製解析後的地圖V2: common/繪製解析後的地圖V2.md
+  - 取得機器當前使用地圖的點位: common/取得機器當前使用地圖的點位.md
+- 機器人任務:
+  - 發起呼叫任務: tasks/發起呼叫任務.md
+  - 取消呼叫任務: tasks/取消呼叫任務.md
+  - 完成呼叫任務: tasks/完成呼叫任務.md
+  - 發送自定義展示內容: tasks/發送自定義展示內容.md
+  - 配送任務: tasks/配送任務.md
+  - 配送指令: tasks/配送指令.md
+  - 運送任務: tasks/運送任務.md
+  - 運送指令: tasks/運送指令.md
+  - 跑腿任務: tasks/跑腿任務.md
+  - 跑腿任務控制指令: tasks/跑腿任務控制指令.md
+  - 頂升任務: tasks/頂升任務.md
+  - 頂升任務控制指令: tasks/頂升任務控制指令.md
+  - 清潔任務列表: tasks/清潔任務列表.md
+  - 清潔指令: tasks/清潔指令.md
+  - 定時任務: tasks/定時任務.md
+- 附錄:
+  - 機器類型: appendix/機器類型.md
+  - 錯誤碼: appendix/錯誤碼.md
+  - Locale枚舉: appendix/Locale枚舉.md
+- 其他:
+  - 首頁: others/首頁.md
+  - 用戶請求普渡開放平台介面步驟: others/用戶請求普渡開放平台介面步驟.md
+  - 鑑權串接: others/鑑權串接.md
+  - 普渡開放平台的對外固定域名: others/普渡開放平台的對外固定域名.md
+  - 普渡開放平台鑑權-應用認證方式: others/普渡開放平台鑑權-應用認證方式.md
+  - 呼叫機器呼叫範例: others/呼叫機器呼叫範例.md
+  - 重點需替換為真實參數: others/重點需替換為真實參數.md
+  - 呼叫抵達通知回呼示例: others/呼叫抵達通知回呼示例.md
+  - 重點需替換為真實參數: others/重點需替換為真實參數.md
+  - 資料中心指標定義: others/資料中心指標定義.md
+  - 取得門市列表: others/取得門市列表.md
+  - 門市機器列表: others/門市機器列表.md
+  - 門市下地圖列表: others/門市下地圖列表.md
+  - 取得地圖詳情V2: others/取得地圖詳情V2.md
+  - 取得機器實時地圖位置: others/取得機器實時地圖位置.md
+  - 取得點位分組: others/取得點位分組.md
+  - 取得清潔機器狀態詳情: others/取得清潔機器狀態詳情.md
+  - 取得指定機器人狀態: others/取得指定機器人狀態.md
+  - 取得指定機器人狀態V2: others/取得指定機器人狀態V2.md
+  - 取得組中機器人狀態: others/取得組中機器人狀態.md
+  - 取得組中機器人狀態V2: others/取得組中機器人狀態V2.md
+  - 取得當前機器執行任務狀態: others/取得當前機器執行任務狀態.md
+  - 取得綁定的機器人組: others/取得綁定的機器人組.md
+  - 取得機器人組中的機器人: others/取得機器人組中的機器人.md
+  - 取得呼叫列表: others/取得呼叫列表.md
+  - 給機器發送託盤推送任務: others/給機器發送託盤推送任務.md
+  - 取得廣告列表: others/取得廣告列表.md
+  - 取得廣告詳情: others/取得廣告詳情.md
+  - 新增廣告: others/新增廣告.md
+  - 更新廣告: others/更新廣告.md
+  - 刪除廣告: others/刪除廣告.md
+  - 取得廣告場景: others/取得廣告場景.md
+  - 取得巡航路徑: others/取得巡航路徑.md
+  - 發起巡航任務: others/發起巡航任務.md
+  - 發送巡航指令: others/發送巡航指令.md
+  - 機器人一鍵回充V2: others/機器人一鍵回充V2.md
+  - 取得艙門狀態: others/取得艙門狀態.md
+  - 艙門控制: others/艙門控制.md
+  - 取得艙門拍照: others/取得艙門拍照.md
+  - 設置頁面顯示內容: others/設置頁面顯示內容.md
+  - 取消任務: others/取消任務.md
+  - 電梯內切換當前使用的樓層地圖: others/電梯內切換當前使用的樓層地圖.md
+  - 通知機器上報位置: others/通知機器上報位置.md
+  - 切換地圖: others/切換地圖.md
+  - 取得音頻列表: others/取得音頻列表.md
+  - 播放音頻: others/播放音頻.md
+  - 播放控制: others/播放控制.md
+  - 音量設置: others/音量設置.md
+  - 機器概覽: others/機器概覽.md
+  - 機器運行概覽: others/機器運行概覽.md
+  - 門市概覽: others/門市概覽.md
+  - 機器運行分析-折線|柱狀圖資料: others/機器運行分析-折線_柱狀圖資料.md
+  - 門市分析-折線|柱狀圖資料: others/門市分析-折線_柱狀圖資料.md
+  - 機器運行分析-列表分頁查詢: others/機器運行分析-列表分頁查詢.md
+  - 門市分析-列表分頁查詢: others/門市分析-列表分頁查詢.md
+  - 廣告-總數|折線|柱狀圖資料: others/廣告-總數_折線_柱狀圖資料.md
+  - 呼叫-總數|折線|柱狀圖資料: others/呼叫-總數_折線_柱狀圖資料.md
+  - 巡航-總數|折線|柱狀圖資料: others/巡航-總數_折線_柱狀圖資料.md
+  - 配送-總數|折線|柱狀圖資料: others/配送-總數_折線_柱狀圖資料.md
+  - 領位-總數|折線|柱狀圖資料: others/領位-總數_折線_柱狀圖資料.md
+  - 宮格-總數|折線|柱狀圖資料: others/宮格-總數_折線_柱狀圖資料.md
+  - 互動-總數|折線|柱狀圖資料: others/互動-總數_折線_柱狀圖資料.md
+  - 回盤-總數|折線|柱狀圖資料: others/回盤-總數_折線_柱狀圖資料.md
+  - 攬客-總數|折線|柱狀圖資料: others/攬客-總數_折線_柱狀圖資料.md
+  - 頂升-總數|折線|柱狀圖資料: others/頂升-總數_折線_柱狀圖資料.md
+  - 清潔(洗地|掃地)-折線|柱狀圖資料: others/清潔_洗地_掃地_-折線_柱狀圖資料.md
+  - 清潔(洗地|掃地)-24小時運行分佈: others/清潔_洗地_掃地_-24小時運行分佈.md
+  - 廣告-列表分頁查詢: others/廣告-列表分頁查詢.md
+  - 呼叫-列表分頁查詢: others/呼叫-列表分頁查詢.md
+  - 巡航-列表分頁查詢: others/巡航-列表分頁查詢.md
+  - 配送-列表分頁查詢: others/配送-列表分頁查詢.md
+  - 領位-列表分頁查詢: others/領位-列表分頁查詢.md
+  - 宮格-列表分頁查詢: others/宮格-列表分頁查詢.md
+  - 互動-列表分頁查詢: others/互動-列表分頁查詢.md
+  - 回盤-列表分頁查詢: others/回盤-列表分頁查詢.md
+  - 攬客-列表分頁查詢: others/攬客-列表分頁查詢.md
+  - 頂升-列表分頁查詢: others/頂升-列表分頁查詢.md
+  - 清潔(洗地|掃地)-列表分頁查詢: others/清潔_洗地_掃地_-列表分頁查詢.md
+  - 呼叫-目的地執行明細: others/呼叫-目的地執行明細.md
+  - 配送-目的地執行明細: others/配送-目的地執行明細.md
+  - 領位-目的地執行明細: others/領位-目的地執行明細.md
+  - 頂升-目的地執行明細: others/頂升-目的地執行明細.md
+  - 回盤-目的地執行明細: others/回盤-目的地執行明細.md
+  - 清潔報告-列表: others/清潔報告-列表.md
+  - 清潔報告-詳情: others/清潔報告-詳情.md
+  - 開機自檢-查詢List: others/開機自檢-查詢List.md
+  - 充電記錄-查詢List: others/充電記錄-查詢List.md
+  - 故障|事件-查詢List: others/故障_事件-查詢List.md
+  - 附錄A：PYTHON API/使用說明書.md（完整併入）: others/附錄A_PYTHON_API_使用說明書.md_完整併入.md
+  - Pudu 控制檯使用說明書（給不懂程式碼的使用者）: others/Pudu_控制檯使用說明書_給不懂程式碼的使用者.md
+  - 附錄B：PYTHON API/API_特殊需求說明.md（完整併入）: others/附錄B_PYTHON_API_API_特殊需求說明.md_完整併入.md
+  - API 特殊需求說明（網站內與官方直打差異）: others/API_特殊需求說明_網站內與官方直打差異.md

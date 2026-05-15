@@ -1,0 +1,437 @@
+- [2026-04-24 09:10:17] 啟動測試，總任務數: 218，已完成(歷史): 0
+- [2026-04-24 09:10:17] [1/218] START shop_list GET /data-open-platform-service/v1/api/shop sn=- map=-
+- [2026-04-24 09:10:18] [1/218] DONE shop_list => OK_MESSAGE_SUCCESS status=200 message=success
+- [2026-04-24 09:10:18] [2/218] START robot_list GET /data-open-platform-service/v1/api/robot sn=- map=-
+- [2026-04-24 09:10:19] [2/218] DONE robot_list => OK_MESSAGE_SUCCESS status=200 message=success
+- [2026-04-24 09:10:19] [3/218] START map_list GET /data-open-platform-service/v1/api/maps sn=- map=-
+- [2026-04-24 09:10:19] [3/218] DONE map_list => OK_MESSAGE_NOT_SUCCESS status=200 message=ok
+- [2026-04-24 09:10:19] [4/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=8170F4124050003 map=-
+- [2026-04-24 09:10:20] [4/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:20] [5/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=826094913050022 map=-
+- [2026-04-24 09:10:21] [5/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:21] [6/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=83A025B13070005 map=-
+- [2026-04-24 09:10:22] [6/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:22] [7/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=868025904070005 map=-
+- [2026-04-24 09:10:23] [7/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:23] [8/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=888015806070013 map=-
+- [2026-04-24 09:10:23] [8/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:23] [9/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=899025912070010 map=-
+- [2026-04-24 09:10:24] [9/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:24] [10/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=8FF055923050007 map=-
+- [2026-04-24 09:10:25] [10/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:25] [11/218] START status_by_sn_v1 GET /open-platform-service/v1/status/get_by_sn sn=8PP044808050001 map=-
+- [2026-04-24 09:10:26] [11/218] DONE status_by_sn_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:26] [12/218] START status_by_group_id_v1 GET /open-platform-service/v1/status/get_by_group_id sn=- map=-
+- [2026-04-24 09:10:27] [12/218] DONE status_by_group_id_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:27] [13/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=8170F4124050003 map=-
+- [2026-04-24 09:10:28] [13/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:28] [14/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=826094913050022 map=-
+- [2026-04-24 09:10:28] [14/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:28] [15/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=83A025B13070005 map=-
+- [2026-04-24 09:10:29] [15/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:29] [16/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=868025904070005 map=-
+- [2026-04-24 09:10:30] [16/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:30] [17/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=888015806070013 map=-
+- [2026-04-24 09:10:31] [17/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:31] [18/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=899025912070010 map=-
+- [2026-04-24 09:10:31] [18/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:31] [19/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=8FF055923050007 map=-
+- [2026-04-24 09:10:32] [19/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:32] [20/218] START status_by_sn_v2 GET /open-platform-service/v2/status/get_by_sn sn=8PP044808050001 map=-
+- [2026-04-24 09:10:33] [20/218] DONE status_by_sn_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:33] [21/218] START status_by_group_id_v2 GET /open-platform-service/v2/status/get_by_group_id sn=- map=-
+- [2026-04-24 09:10:33] [21/218] DONE status_by_group_id_v2 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:33] [22/218] START robot_task_state GET /open-platform-service/v1/robot/task/state/get sn=- map=-
+- [2026-04-24 09:10:33] [22/218] DONE robot_task_state => SKIPPED_NO_MATCHED_ROBOT status=SKIP message=No matched robots for supported_models
+- [2026-04-24 09:10:33] [23/218] START cleanbot_detail GET /cleanbot-service/v1/api/open/robot/detail sn=868025904070005 map=-
+- [2026-04-24 09:10:34] [23/218] DONE cleanbot_detail => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:34] [24/218] START cleanbot_detail GET /cleanbot-service/v1/api/open/robot/detail sn=888015806070013 map=-
+- [2026-04-24 09:10:35] [24/218] DONE cleanbot_detail => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:35] [25/218] START cleanbot_detail GET /cleanbot-service/v1/api/open/robot/detail sn=899025912070010 map=-
+- [2026-04-24 09:10:36] [25/218] DONE cleanbot_detail => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:36] [26/218] START map_current GET /map-service/v1/open/current sn=8170F4124050003 map=1#1#內湖展間v20
+- [2026-04-24 09:10:36] [26/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:36] [27/218] START map_current GET /map-service/v1/open/current sn=8170F4124050003 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:38] [27/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:38] [28/218] START map_current GET /map-service/v1/open/current sn=826094913050022 map=1#1#內湖展間v20
+- [2026-04-24 09:10:38] [28/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:38] [29/218] START map_current GET /map-service/v1/open/current sn=826094913050022 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:39] [29/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:39] [30/218] START map_current GET /map-service/v1/open/current sn=83A025B13070005 map=1#1#內湖展間v20
+- [2026-04-24 09:10:40] [30/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:40] [31/218] START map_current GET /map-service/v1/open/current sn=83A025B13070005 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:41] [31/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:41] [32/218] START map_current GET /map-service/v1/open/current sn=868025904070005 map=1#1#內湖展間v20
+- [2026-04-24 09:10:42] [32/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:42] [33/218] START map_current GET /map-service/v1/open/current sn=868025904070005 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:42] [33/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:42] [34/218] START map_current GET /map-service/v1/open/current sn=888015806070013 map=1#1#內湖展間v20
+- [2026-04-24 09:10:43] [34/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:43] [35/218] START map_current GET /map-service/v1/open/current sn=888015806070013 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:44] [35/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:44] [36/218] START map_current GET /map-service/v1/open/current sn=899025912070010 map=1#1#內湖展間v20
+- [2026-04-24 09:10:45] [36/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:45] [37/218] START map_current GET /map-service/v1/open/current sn=899025912070010 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:46] [37/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:46] [38/218] START map_current GET /map-service/v1/open/current sn=8FF055923050007 map=1#1#內湖展間v20
+- [2026-04-24 09:10:46] [38/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:46] [39/218] START map_current GET /map-service/v1/open/current sn=8FF055923050007 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:47] [39/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:47] [40/218] START map_current GET /map-service/v1/open/current sn=8PP044808050001 map=1#1#內湖展間v20
+- [2026-04-24 09:10:48] [40/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:48] [41/218] START map_current GET /map-service/v1/open/current sn=8PP044808050001 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:49] [41/218] DONE map_current => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:49] [42/218] START map_list_by_robot GET /map-service/v1/open/list sn=8170F4124050003 map=1#1#內湖展間v20
+- [2026-04-24 09:10:50] [42/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:50] [43/218] START map_list_by_robot GET /map-service/v1/open/list sn=8170F4124050003 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:51] [43/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:51] [44/218] START map_list_by_robot GET /map-service/v1/open/list sn=826094913050022 map=1#1#內湖展間v20
+- [2026-04-24 09:10:52] [44/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:52] [45/218] START map_list_by_robot GET /map-service/v1/open/list sn=826094913050022 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:53] [45/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:53] [46/218] START map_list_by_robot GET /map-service/v1/open/list sn=83A025B13070005 map=1#1#內湖展間v20
+- [2026-04-24 09:10:53] [46/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:53] [47/218] START map_list_by_robot GET /map-service/v1/open/list sn=83A025B13070005 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:54] [47/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:54] [48/218] START map_list_by_robot GET /map-service/v1/open/list sn=868025904070005 map=1#1#內湖展間v20
+- [2026-04-24 09:10:55] [48/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:55] [49/218] START map_list_by_robot GET /map-service/v1/open/list sn=868025904070005 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:56] [49/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:56] [50/218] START map_list_by_robot GET /map-service/v1/open/list sn=888015806070013 map=1#1#內湖展間v20
+- [2026-04-24 09:10:57] [50/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:57] [51/218] START map_list_by_robot GET /map-service/v1/open/list sn=888015806070013 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:58] [51/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:58] [52/218] START map_list_by_robot GET /map-service/v1/open/list sn=899025912070010 map=1#1#內湖展間v20
+- [2026-04-24 09:10:59] [52/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:59] [53/218] START map_list_by_robot GET /map-service/v1/open/list sn=899025912070010 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:10:59] [53/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:10:59] [54/218] START map_list_by_robot GET /map-service/v1/open/list sn=8FF055923050007 map=1#1#內湖展間v20
+- [2026-04-24 09:11:00] [54/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:00] [55/218] START map_list_by_robot GET /map-service/v1/open/list sn=8FF055923050007 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:01] [55/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:01] [56/218] START map_list_by_robot GET /map-service/v1/open/list sn=8PP044808050001 map=1#1#內湖展間v20
+- [2026-04-24 09:11:02] [56/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:02] [57/218] START map_list_by_robot GET /map-service/v1/open/list sn=8PP044808050001 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:03] [57/218] DONE map_list_by_robot => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:03] [58/218] START map_detail_v1 GET /map-service/v1/open/map sn=- map=1#1#內湖展間v20
+- [2026-04-24 09:11:03] [58/218] DONE map_detail_v1 => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:03] [59/218] START map_detail_v1 GET /map-service/v1/open/map sn=- map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:04] [59/218] DONE map_detail_v1 => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:04] [60/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=8170F4124050003 map=-
+- [2026-04-24 09:11:06] [60/218] DONE robot_position => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:06] [61/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=826094913050022 map=-
+- [2026-04-24 09:11:06] [61/218] DONE robot_position => HTTP_ERROR status=500 message=CLOUD_OPEN_ROBOT_OFFLINE
+- [2026-04-24 09:11:06] [62/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=83A025B13070005 map=-
+- [2026-04-24 09:11:07] [62/218] DONE robot_position => HTTP_ERROR status=500 message=CLOUD_OPEN_ROBOT_OFFLINE
+- [2026-04-24 09:11:07] [63/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=868025904070005 map=-
+- [2026-04-24 09:11:09] [63/218] DONE robot_position => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:09] [64/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=888015806070013 map=-
+- [2026-04-24 09:11:10] [64/218] DONE robot_position => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:10] [65/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=899025912070010 map=-
+- [2026-04-24 09:11:11] [65/218] DONE robot_position => HTTP_ERROR status=500 message=CLOUD_OPEN_ROBOT_OFFLINE
+- [2026-04-24 09:11:11] [66/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=8FF055923050007 map=-
+- [2026-04-24 09:11:12] [66/218] DONE robot_position => HTTP_ERROR status=500 message=CLOUD_OPEN_ROBOT_OFFLINE
+- [2026-04-24 09:11:12] [67/218] START robot_position GET /open-platform-service/v1/robot/get_position sn=8PP044808050001 map=-
+- [2026-04-24 09:11:13] [67/218] DONE robot_position => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:13] [68/218] START map_points GET /map-service/v1/open/point sn=- map=1#1#內湖展間v20
+- [2026-04-24 09:11:14] [68/218] DONE map_points => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:14] [69/218] START map_points GET /map-service/v1/open/point sn=- map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:15] [69/218] DONE map_points => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:15] [70/218] START map_group POST /map-service/v1/open/group sn=- map=1#1#內湖展間v20
+- [2026-04-24 09:11:15] [70/218] DONE map_group => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:15] [71/218] START map_group POST /map-service/v1/open/group sn=- map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:16] [71/218] DONE map_group => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:16] [72/218] START switch_map POST /open-platform-service/v1/switch_map sn=826094913050022 map=1#1#內湖展間v20
+- [2026-04-24 09:11:17] [72/218] DONE switch_map => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:17] [73/218] START switch_map POST /open-platform-service/v1/switch_map sn=826094913050022 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:18] [73/218] DONE switch_map => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:18] [74/218] START switch_map_in_elevator POST /open-platform-service/v1/robot/map/switch_in_elevator sn=826094913050022 map=1#1#內湖展間v20
+- [2026-04-24 09:11:19] [74/218] DONE switch_map_in_elevator => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:19] [75/218] START switch_map_in_elevator POST /open-platform-service/v1/robot/map/switch_in_elevator sn=826094913050022 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:19] [75/218] DONE switch_map_in_elevator => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:19] [76/218] START switch_map_in_elevator POST /open-platform-service/v1/robot/map/switch_in_elevator sn=8FF055923050007 map=1#1#內湖展間v20
+- [2026-04-24 09:11:20] [76/218] DONE switch_map_in_elevator => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:20] [77/218] START switch_map_in_elevator POST /open-platform-service/v1/robot/map/switch_in_elevator sn=8FF055923050007 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:21] [77/218] DONE switch_map_in_elevator => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:21] [78/218] START custom_call POST /open-platform-service/v1/custom_call sn=8170F4124050003 map=1#1#內湖展間v20
+- [2026-04-24 09:11:22] [78/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:22] [79/218] START custom_call POST /open-platform-service/v1/custom_call sn=8170F4124050003 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:22] [79/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:22] [80/218] START custom_call POST /open-platform-service/v1/custom_call sn=826094913050022 map=1#1#內湖展間v20
+- [2026-04-24 09:11:23] [80/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:23] [81/218] START custom_call POST /open-platform-service/v1/custom_call sn=826094913050022 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:24] [81/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:24] [82/218] START custom_call POST /open-platform-service/v1/custom_call sn=8FF055923050007 map=1#1#內湖展間v20
+- [2026-04-24 09:11:25] [82/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:25] [83/218] START custom_call POST /open-platform-service/v1/custom_call sn=8FF055923050007 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:26] [83/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:26] [84/218] START custom_call POST /open-platform-service/v1/custom_call sn=8PP044808050001 map=1#1#內湖展間v20
+- [2026-04-24 09:11:27] [84/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:27] [85/218] START custom_call POST /open-platform-service/v1/custom_call sn=8PP044808050001 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:28] [85/218] DONE custom_call => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:28] [86/218] START custom_call_cancel POST /open-platform-service/v1/custom_call/cancel sn=8170F4124050003 map=-
+- [2026-04-24 09:11:28] [86/218] DONE custom_call_cancel => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:28] [87/218] START custom_call_cancel POST /open-platform-service/v1/custom_call/cancel sn=826094913050022 map=-
+- [2026-04-24 09:11:29] [87/218] DONE custom_call_cancel => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:29] [88/218] START custom_call_cancel POST /open-platform-service/v1/custom_call/cancel sn=8FF055923050007 map=-
+- [2026-04-24 09:11:30] [88/218] DONE custom_call_cancel => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:30] [89/218] START custom_call_cancel POST /open-platform-service/v1/custom_call/cancel sn=8PP044808050001 map=-
+- [2026-04-24 09:11:31] [89/218] DONE custom_call_cancel => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:31] [90/218] START custom_call_complete POST /open-platform-service/v1/custom_call/complete sn=- map=1#1#內湖展間v20
+- [2026-04-24 09:11:32] [90/218] DONE custom_call_complete => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:32] [91/218] START custom_call_complete POST /open-platform-service/v1/custom_call/complete sn=- map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:33] [91/218] DONE custom_call_complete => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:33] [92/218] START custom_content POST /open-platform-service/v1/custom_content sn=8170F4124050003 map=-
+- [2026-04-24 09:11:33] [92/218] DONE custom_content => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:33] [93/218] START custom_content POST /open-platform-service/v1/custom_content sn=826094913050022 map=-
+- [2026-04-24 09:11:34] [93/218] DONE custom_content => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:34] [94/218] START custom_content POST /open-platform-service/v1/custom_content sn=8FF055923050007 map=-
+- [2026-04-24 09:11:35] [94/218] DONE custom_content => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:35] [95/218] START call_list GET /open-platform-service/v1/call/list sn=8170F4124050003 map=-
+- [2026-04-24 09:11:37] [95/218] DONE call_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:37] [96/218] START call_list GET /open-platform-service/v1/call/list sn=826094913050022 map=-
+- [2026-04-24 09:11:39] [96/218] DONE call_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:39] [97/218] START call_list GET /open-platform-service/v1/call/list sn=8FF055923050007 map=-
+- [2026-04-24 09:11:41] [97/218] DONE call_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:41] [98/218] START call_list GET /open-platform-service/v1/call/list sn=8PP044808050001 map=-
+- [2026-04-24 09:11:42] [98/218] DONE call_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:42] [99/218] START delivery_task POST /open-platform-service/v1/delivery_task sn=8170F4124050003 map=-
+- [2026-04-24 09:11:43] [99/218] DONE delivery_task => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:43] [100/218] START delivery_task POST /open-platform-service/v1/delivery_task sn=826094913050022 map=-
+- [2026-04-24 09:11:44] [100/218] DONE delivery_task => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:44] [101/218] START delivery_task POST /open-platform-service/v1/delivery_task sn=8FF055923050007 map=-
+- [2026-04-24 09:11:45] [101/218] DONE delivery_task => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:45] [102/218] START delivery_action POST /open-platform-service/v1/delivery_action sn=8170F4124050003 map=-
+- [2026-04-24 09:11:46] [102/218] DONE delivery_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:46] [103/218] START delivery_action POST /open-platform-service/v1/delivery_action sn=826094913050022 map=-
+- [2026-04-24 09:11:47] [103/218] DONE delivery_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:47] [104/218] START delivery_action POST /open-platform-service/v1/delivery_action sn=8FF055923050007 map=-
+- [2026-04-24 09:11:48] [104/218] DONE delivery_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:48] [105/218] START cancel_task POST /open-platform-service/v1/cancel_task sn=- map=-
+- [2026-04-24 09:11:48] [105/218] DONE cancel_task => SKIPPED_NO_MATCHED_ROBOT status=SKIP message=No matched robots for supported_models
+- [2026-04-24 09:11:48] [106/218] START transport_task POST /open-platform-service/v1/transport_task sn=8170F4124050003 map=-
+- [2026-04-24 09:11:48] [106/218] DONE transport_task => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:48] [107/218] START transport_action POST /open-platform-service/v1/transport_action sn=8170F4124050003 map=-
+- [2026-04-24 09:11:49] [107/218] DONE transport_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:49] [108/218] START tray_order POST /open-platform-service/v1/tray_order sn=- map=-
+- [2026-04-24 09:11:49] [108/218] DONE tray_order => SKIPPED_NO_MATCHED_ROBOT status=SKIP message=No matched robots for supported_models
+- [2026-04-24 09:11:49] [109/218] START task_errand POST /open-platform-service/v1/task_errand sn=8FF055923050007 map=1#1#內湖展間v20
+- [2026-04-24 09:11:50] [109/218] DONE task_errand => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:50] [110/218] START task_errand POST /open-platform-service/v1/task_errand sn=8FF055923050007 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:11:51] [110/218] DONE task_errand => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:51] [111/218] START errand_action POST /open-platform-service/v1/errand_action sn=8FF055923050007 map=-
+- [2026-04-24 09:11:51] [111/218] DONE errand_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:51] [112/218] START lifting_task POST /open-platform-service/v1/lifting_task sn=826094913050022 map=-
+- [2026-04-24 09:11:52] [112/218] DONE lifting_task => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:52] [113/218] START lifting_action POST /open-platform-service/v1/lifting_action sn=826094913050022 map=-
+- [2026-04-24 09:11:53] [113/218] DONE lifting_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:53] [114/218] START cruise_task POST /open-platform-service/v1/cruise_task sn=8170F4124050003 map=-
+- [2026-04-24 09:11:54] [114/218] DONE cruise_task => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:54] [115/218] START cruise_action POST /open-platform-service/v1/cruise_action sn=8170F4124050003 map=-
+- [2026-04-24 09:11:55] [115/218] DONE cruise_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:55] [116/218] START get_cruise_line GET /open-platform-service/v1/get_cruise_line sn=8170F4124050003 map=-
+- [2026-04-24 09:11:56] [116/218] DONE get_cruise_line => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:56] [117/218] START cleanbot_task_list GET /cleanbot-service/v1/api/open/task/list sn=868025904070005 map=-
+- [2026-04-24 09:11:56] [117/218] DONE cleanbot_task_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:56] [118/218] START cleanbot_task_list GET /cleanbot-service/v1/api/open/task/list sn=888015806070013 map=-
+- [2026-04-24 09:11:57] [118/218] DONE cleanbot_task_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:57] [119/218] START cleanbot_task_list GET /cleanbot-service/v1/api/open/task/list sn=899025912070010 map=-
+- [2026-04-24 09:11:58] [119/218] DONE cleanbot_task_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:11:58] [120/218] START cleanbot_task_exec POST /cleanbot-service/v1/api/open/task/exec sn=868025904070005 map=-
+- [2026-04-24 09:11:59] [120/218] DONE cleanbot_task_exec => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:11:59] [121/218] START cleanbot_task_exec POST /cleanbot-service/v1/api/open/task/exec sn=888015806070013 map=-
+- [2026-04-24 09:12:00] [121/218] DONE cleanbot_task_exec => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:00] [122/218] START cleanbot_task_exec POST /cleanbot-service/v1/api/open/task/exec sn=899025912070010 map=-
+- [2026-04-24 09:12:01] [122/218] DONE cleanbot_task_exec => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:01] [123/218] START cleanbot_cron_list GET /cleanbot-service/v1/api/open/cron/list sn=868025904070005 map=-
+- [2026-04-24 09:12:01] [123/218] DONE cleanbot_cron_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:12:01] [124/218] START cleanbot_cron_list GET /cleanbot-service/v1/api/open/cron/list sn=888015806070013 map=-
+- [2026-04-24 09:12:03] [124/218] DONE cleanbot_cron_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:12:03] [125/218] START cleanbot_cron_list GET /cleanbot-service/v1/api/open/cron/list sn=899025912070010 map=-
+- [2026-04-24 09:12:04] [125/218] DONE cleanbot_cron_list => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:12:04] [126/218] START gg_list POST /biz-service/openPlatform/api/v1/gg/list sn=8PP044808050001 map=-
+- [2026-04-24 09:12:05] [126/218] DONE gg_list => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:05] [127/218] START gg_get GET /biz-service/openPlatform/api/v1/gg/get sn=- map=-
+- [2026-04-24 09:12:07] [127/218] DONE gg_get => OK_MESSAGE_NOT_SUCCESS status=200 message=parsing field "id": strconv.ParseInt: parsing "demo": invalid syntax
+- [2026-04-24 09:12:07] [128/218] START gg_create POST /biz-service/openPlatform/api/v1/gg/create sn=8PP044808050001 map=1#1#內湖展間v20
+- [2026-04-24 09:12:10] [128/218] DONE gg_create => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:10] [129/218] START gg_create POST /biz-service/openPlatform/api/v1/gg/create sn=8PP044808050001 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:12:12] [129/218] DONE gg_create => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:12] [130/218] START gg_update POST /biz-service/openPlatform/api/v1/gg/update sn=8PP044808050001 map=1#1#內湖展間v20
+- [2026-04-24 09:12:13] [130/218] DONE gg_update => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:13] [131/218] START gg_update POST /biz-service/openPlatform/api/v1/gg/update sn=8PP044808050001 map=1#7#內湖展間清潔v4
+- [2026-04-24 09:12:14] [131/218] DONE gg_update => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:14] [132/218] START gg_delete POST /biz-service/openPlatform/api/v1/gg/delete sn=- map=-
+- [2026-04-24 09:12:15] [132/218] DONE gg_delete => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:15] [133/218] START gg_scenes_list POST /biz-service/openPlatform/api/v1/gg/scenesMenu/list sn=- map=-
+- [2026-04-24 09:12:17] [133/218] DONE gg_scenes_list => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:17] [134/218] START control_doors POST /open-platform-service/v1/control_doors sn=8FF055923050007 map=-
+- [2026-04-24 09:12:18] [134/218] DONE control_doors => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:18] [135/218] START door_state GET /open-platform-service/v1/door_state sn=8FF055923050007 map=-
+- [2026-04-24 09:12:34] [135/218] DONE door_state => HTTP_ERROR status=500 message=CLOUD_OPEN_TIMEOUT
+- [2026-04-24 09:12:34] [136/218] START robot_screen_set POST /open-platform-service/v1/robot/screen/set sn=- map=-
+- [2026-04-24 09:12:34] [136/218] DONE robot_screen_set => SKIPPED_NO_MATCHED_ROBOT status=SKIP message=No matched robots for supported_models
+- [2026-04-24 09:12:34] [137/218] START position_command POST /open-platform-service/v1/position_command sn=826094913050022 map=-
+- [2026-04-24 09:12:35] [137/218] DONE position_command => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:35] [138/218] START position_command POST /open-platform-service/v1/position_command sn=8FF055923050007 map=-
+- [2026-04-24 09:12:36] [138/218] DONE position_command => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:36] [139/218] START robot_group_list GET /open-platform-service/v1/robot/group/list sn=- map=-
+- [2026-04-24 09:12:37] [139/218] DONE robot_group_list => HTTP_ERROR status=500 message=CLOUD_OPEN_ROBOT_PARAM_ERROR
+- [2026-04-24 09:12:37] [140/218] START robot_list_by_device_and_group GET /open-platform-service/v1/robot/list_by_device_and_group sn=- map=-
+- [2026-04-24 09:12:38] [140/218] DONE robot_list_by_device_and_group => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:12:38] [141/218] START voice_list GET /open-platform-service/v1/voice/list sn=8PP044808050001 map=-
+- [2026-04-24 09:12:54] [141/218] DONE voice_list => HTTP_ERROR status=500 message=CLOUD_OPEN_TIMEOUT
+- [2026-04-24 09:12:54] [142/218] START voice_play POST /open-platform-service/v1/voice/play sn=8PP044808050001 map=-
+- [2026-04-24 09:12:55] [142/218] DONE voice_play => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:55] [143/218] START voice_action POST /open-platform-service/v1/voice/action sn=8PP044808050001 map=-
+- [2026-04-24 09:12:56] [143/218] DONE voice_action => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:56] [144/218] START volume_set POST /open-platform-service/v1/volume/set sn=8PP044808050001 map=-
+- [2026-04-24 09:12:57] [144/218] DONE volume_set => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:12:57] [145/218] START recharge_v1 GET /open-platform-service/v1/recharge sn=8170F4124050003 map=-
+- [2026-04-24 09:12:59] [145/218] DONE recharge_v1 => OK_MESSAGE_SUCCESS status=200 message=SUCCESS
+- [2026-04-24 09:12:59] [146/218] START recharge_v2 GET /open-platform-service/v2/recharge sn=826094913050022 map=-
+- [2026-04-24 09:13:15] [146/218] DONE recharge_v2 => HTTP_ERROR status=500 message=CLOUD_OPEN_TIMEOUT
+- [2026-04-24 09:13:15] [147/218] START recharge_v2 GET /open-platform-service/v2/recharge sn=8FF055923050007 map=-
+- [2026-04-24 09:13:30] [147/218] DONE recharge_v2 => HTTP_ERROR status=500 message=CLOUD_OPEN_TIMEOUT
+- [2026-04-24 09:13:30] [148/218] START robot_door_task_list POST /biz-open-service/v1/robotDoor/task_list sn=8FF055923050007 map=-
+- [2026-04-24 09:13:32] [148/218] DONE robot_door_task_list => HTTP_ERROR status=401 message=HMAC signature does not match.
+- [2026-04-24 09:13:32] [149/218] START analysis_shop GET /data-board/v1/analysis/shop sn=- map=-
+- [2026-04-24 09:13:33] [149/218] DONE analysis_shop => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:33] [150/218] START analysis_shop_paging GET /data-board/v1/analysis/shop/paging sn=- map=-
+- [2026-04-24 09:13:35] [150/218] DONE analysis_shop_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:35] [151/218] START analysis_run GET /data-board/v1/analysis/run sn=- map=-
+- [2026-04-24 09:13:36] [151/218] DONE analysis_run => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:36] [152/218] START analysis_run_paging GET /data-board/v1/analysis/run/paging sn=- map=-
+- [2026-04-24 09:13:37] [152/218] DONE analysis_run_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:37] [153/218] START analysis_clean_detail GET /data-board/v1/analysis/clean/detail sn=- map=-
+- [2026-04-24 09:13:38] [153/218] DONE analysis_clean_detail => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:38] [154/218] START analysis_clean_mode GET /data-board/v1/analysis/clean/mode sn=- map=-
+- [2026-04-24 09:13:40] [154/218] DONE analysis_clean_mode => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:40] [155/218] START analysis_clean_paging GET /data-board/v1/analysis/clean/paging sn=- map=-
+- [2026-04-24 09:13:41] [155/218] DONE analysis_clean_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:41] [156/218] START brief_shop GET /data-board/v1/brief/shop sn=- map=-
+- [2026-04-24 09:13:42] [156/218] DONE brief_shop => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:42] [157/218] START brief_run GET /data-board/v1/brief/run sn=- map=-
+- [2026-04-24 09:13:43] [157/218] DONE brief_run => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:43] [158/218] START brief_robot GET /data-board/v1/brief/robot sn=8170F4124050003 map=-
+- [2026-04-24 09:13:44] [158/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:44] [159/218] START brief_robot GET /data-board/v1/brief/robot sn=826094913050022 map=-
+- [2026-04-24 09:13:46] [159/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:46] [160/218] START brief_robot GET /data-board/v1/brief/robot sn=83A025B13070005 map=-
+- [2026-04-24 09:13:47] [160/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:47] [161/218] START brief_robot GET /data-board/v1/brief/robot sn=868025904070005 map=-
+- [2026-04-24 09:13:48] [161/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:48] [162/218] START brief_robot GET /data-board/v1/brief/robot sn=888015806070013 map=-
+- [2026-04-24 09:13:49] [162/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:49] [163/218] START brief_robot GET /data-board/v1/brief/robot sn=899025912070010 map=-
+- [2026-04-24 09:13:50] [163/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:50] [164/218] START brief_robot GET /data-board/v1/brief/robot sn=8FF055923050007 map=-
+- [2026-04-24 09:13:51] [164/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:51] [165/218] START brief_robot GET /data-board/v1/brief/robot sn=8PP044808050001 map=-
+- [2026-04-24 09:13:52] [165/218] DONE brief_robot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:52] [166/218] START task_call GET /data-board/v1/task/call sn=- map=-
+- [2026-04-24 09:13:53] [166/218] DONE task_call => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:53] [167/218] START task_delivery GET /data-board/v1/task/delivery sn=- map=-
+- [2026-04-24 09:13:54] [167/218] DONE task_delivery => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:54] [168/218] START task_greeter GET /data-board/v1/task/greeter sn=- map=-
+- [2026-04-24 09:13:56] [168/218] DONE task_greeter => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:56] [169/218] START task_lifting GET /data-board/v1/task/lifting sn=- map=-
+- [2026-04-24 09:13:57] [169/218] DONE task_lifting => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:57] [170/218] START task_recovery GET /data-board/v1/task/recovery sn=- map=-
+- [2026-04-24 09:13:58] [170/218] DONE task_recovery => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:58] [171/218] START analysis_task_call GET /data-board/v1/analysis/task/call sn=- map=-
+- [2026-04-24 09:13:59] [171/218] DONE analysis_task_call => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:13:59] [172/218] START analysis_task_call_paging GET /data-board/v1/analysis/task/call/paging sn=- map=-
+- [2026-04-24 09:14:00] [172/218] DONE analysis_task_call_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:00] [173/218] START analysis_task_delivery GET /data-board/v1/analysis/task/delivery sn=- map=-
+- [2026-04-24 09:14:01] [173/218] DONE analysis_task_delivery => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:01] [174/218] START analysis_task_delivery_paging GET /data-board/v1/analysis/task/delivery/paging sn=- map=-
+- [2026-04-24 09:14:02] [174/218] DONE analysis_task_delivery_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:02] [175/218] START analysis_task_cruise GET /data-board/v1/analysis/task/cruise sn=- map=-
+- [2026-04-24 09:14:03] [175/218] DONE analysis_task_cruise => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:03] [176/218] START analysis_task_cruise_paging GET /data-board/v1/analysis/task/cruise/paging sn=- map=-
+- [2026-04-24 09:14:04] [176/218] DONE analysis_task_cruise_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:04] [177/218] START analysis_task_greeter GET /data-board/v1/analysis/task/greeter sn=- map=-
+- [2026-04-24 09:14:05] [177/218] DONE analysis_task_greeter => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:05] [178/218] START analysis_task_greeter_paging GET /data-board/v1/analysis/task/greeter/paging sn=- map=-
+- [2026-04-24 09:14:06] [178/218] DONE analysis_task_greeter_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:06] [179/218] START analysis_task_lifting GET /data-board/v1/analysis/task/lifting sn=- map=-
+- [2026-04-24 09:14:07] [179/218] DONE analysis_task_lifting => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:07] [180/218] START analysis_task_lifting_paging GET /data-board/v1/analysis/task/lifting/paging sn=- map=-
+- [2026-04-24 09:14:08] [180/218] DONE analysis_task_lifting_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:08] [181/218] START analysis_task_recovery GET /data-board/v1/analysis/task/recovery sn=- map=-
+- [2026-04-24 09:14:09] [181/218] DONE analysis_task_recovery => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:09] [182/218] START analysis_task_recovery_paging GET /data-board/v1/analysis/task/recovery/paging sn=- map=-
+- [2026-04-24 09:14:09] [182/218] DONE analysis_task_recovery_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:09] [183/218] START analysis_task_solicit GET /data-board/v1/analysis/task/solicit sn=- map=-
+- [2026-04-24 09:14:10] [183/218] DONE analysis_task_solicit => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:10] [184/218] START analysis_task_solicit_paging GET /data-board/v1/analysis/task/solicit/paging sn=- map=-
+- [2026-04-24 09:14:11] [184/218] DONE analysis_task_solicit_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:11] [185/218] START analysis_task_interactive GET /data-board/v1/analysis/task/interactive sn=- map=-
+- [2026-04-24 09:14:12] [185/218] DONE analysis_task_interactive => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:12] [186/218] START analysis_task_interactive_paging GET /data-board/v1/analysis/task/interactive/paging sn=- map=-
+- [2026-04-24 09:14:13] [186/218] DONE analysis_task_interactive_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:13] [187/218] START analysis_task_ad GET /data-board/v1/analysis/task/ad sn=- map=-
+- [2026-04-24 09:14:14] [187/218] DONE analysis_task_ad => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:14] [188/218] START analysis_task_ad_paging GET /data-board/v1/analysis/task/ad/paging sn=- map=-
+- [2026-04-24 09:14:15] [188/218] DONE analysis_task_ad_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:15] [189/218] START analysis_task_grid GET /data-board/v1/analysis/task/grid sn=- map=-
+- [2026-04-24 09:14:16] [189/218] DONE analysis_task_grid => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:16] [190/218] START analysis_task_grid_paging GET /data-board/v1/analysis/task/grid/paging sn=- map=-
+- [2026-04-24 09:14:17] [190/218] DONE analysis_task_grid_paging => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:17] [191/218] START log_boot GET /data-board/v1/log/boot/query_list sn=8170F4124050003 map=-
+- [2026-04-24 09:14:17] [191/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:17] [192/218] START log_boot GET /data-board/v1/log/boot/query_list sn=826094913050022 map=-
+- [2026-04-24 09:14:18] [192/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:18] [193/218] START log_boot GET /data-board/v1/log/boot/query_list sn=83A025B13070005 map=-
+- [2026-04-24 09:14:19] [193/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:19] [194/218] START log_boot GET /data-board/v1/log/boot/query_list sn=868025904070005 map=-
+- [2026-04-24 09:14:20] [194/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:20] [195/218] START log_boot GET /data-board/v1/log/boot/query_list sn=888015806070013 map=-
+- [2026-04-24 09:14:21] [195/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:21] [196/218] START log_boot GET /data-board/v1/log/boot/query_list sn=899025912070010 map=-
+- [2026-04-24 09:14:22] [196/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:22] [197/218] START log_boot GET /data-board/v1/log/boot/query_list sn=8FF055923050007 map=-
+- [2026-04-24 09:14:23] [197/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:23] [198/218] START log_boot GET /data-board/v1/log/boot/query_list sn=8PP044808050001 map=-
+- [2026-04-24 09:14:23] [198/218] DONE log_boot => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:23] [199/218] START log_charge GET /data-board/v1/log/charge/query_list sn=8170F4124050003 map=-
+- [2026-04-24 09:14:24] [199/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:24] [200/218] START log_charge GET /data-board/v1/log/charge/query_list sn=826094913050022 map=-
+- [2026-04-24 09:14:25] [200/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:25] [201/218] START log_charge GET /data-board/v1/log/charge/query_list sn=83A025B13070005 map=-
+- [2026-04-24 09:14:26] [201/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:26] [202/218] START log_charge GET /data-board/v1/log/charge/query_list sn=868025904070005 map=-
+- [2026-04-24 09:14:27] [202/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:27] [203/218] START log_charge GET /data-board/v1/log/charge/query_list sn=888015806070013 map=-
+- [2026-04-24 09:14:28] [203/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:28] [204/218] START log_charge GET /data-board/v1/log/charge/query_list sn=899025912070010 map=-
+- [2026-04-24 09:14:29] [204/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:29] [205/218] START log_charge GET /data-board/v1/log/charge/query_list sn=8FF055923050007 map=-
+- [2026-04-24 09:14:30] [205/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:30] [206/218] START log_charge GET /data-board/v1/log/charge/query_list sn=8PP044808050001 map=-
+- [2026-04-24 09:14:31] [206/218] DONE log_charge => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:31] [207/218] START log_clean_task GET /data-board/v1/log/clean_task/query_list sn=868025904070005 map=-
+- [2026-04-24 09:14:32] [207/218] DONE log_clean_task => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:32] [208/218] START log_clean_task GET /data-board/v1/log/clean_task/query_list sn=888015806070013 map=-
+- [2026-04-24 09:14:33] [208/218] DONE log_clean_task => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:33] [209/218] START log_clean_task GET /data-board/v1/log/clean_task/query_list sn=899025912070010 map=-
+- [2026-04-24 09:14:34] [209/218] DONE log_clean_task => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:34] [210/218] START log_clean_task_detail GET /data-board/v1/log/clean_task/query sn=- map=-
+- [2026-04-24 09:14:35] [210/218] DONE log_clean_task_detail => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:35] [211/218] START log_error GET /data-board/v1/log/error/query_list sn=8170F4124050003 map=-
+- [2026-04-24 09:14:36] [211/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:36] [212/218] START log_error GET /data-board/v1/log/error/query_list sn=826094913050022 map=-
+- [2026-04-24 09:14:37] [212/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:37] [213/218] START log_error GET /data-board/v1/log/error/query_list sn=83A025B13070005 map=-
+- [2026-04-24 09:14:38] [213/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:38] [214/218] START log_error GET /data-board/v1/log/error/query_list sn=868025904070005 map=-
+- [2026-04-24 09:14:39] [214/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:39] [215/218] START log_error GET /data-board/v1/log/error/query_list sn=888015806070013 map=-
+- [2026-04-24 09:14:41] [215/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:41] [216/218] START log_error GET /data-board/v1/log/error/query_list sn=899025912070010 map=-
+- [2026-04-24 09:14:42] [216/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:42] [217/218] START log_error GET /data-board/v1/log/error/query_list sn=8FF055923050007 map=-
+- [2026-04-24 09:14:43] [217/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
+- [2026-04-24 09:14:43] [218/218] START log_error GET /data-board/v1/log/error/query_list sn=8PP044808050001 map=-
+- [2026-04-24 09:14:45] [218/218] DONE log_error => HTTP_ERROR status=500 message=DM_SYSTEM_ERROR
